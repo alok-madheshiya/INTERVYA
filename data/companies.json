@@ -1,0 +1,5114 @@
+{
+  "verified_on": "2026-09-05",
+  "round_types": {
+    "oa": "aptitude",
+    "fundamentals": "cs_fundamentals",
+    "dsa": "dsa",
+    "lld": "lld",
+    "hld": "system_design",
+    "project": "project",
+    "managerial": "managerial",
+    "hr": "hr",
+    "gd": "gd",
+    "case": "case",
+    "behavioral_lp": "hr"
+  },
+  "personas": [
+    {
+      "id": "p_tcs_senior",
+      "name": "Rakesh Iyer",
+      "title": "Senior Technical Lead",
+      "gender": "M",
+      "age": "45-50",
+      "harshness": 2,
+      "speciality": [
+        "dbms",
+        "sql",
+        "oops"
+      ],
+      "tic": "Right, tell me one thing —",
+      "pet_peeve": "reciting a memorised definition",
+      "style": "Quiet, formal, writes a great many notes. Leaves long silences that make candidates nervous."
+    },
+    {
+      "id": "p_tcs_hr",
+      "name": "Meenakshi Rao",
+      "title": "HR Business Partner",
+      "gender": "F",
+      "age": "35-40",
+      "harshness": 1,
+      "speciality": [
+        "communication",
+        "culture fit"
+      ],
+      "tic": "Okay, so —",
+      "pet_peeve": "answers that sound rehearsed",
+      "style": "Warm, but assessing throughout. Digs behind every rehearsed answer for a real example."
+    },
+    {
+      "id": "p_infy_panel",
+      "name": "Srinivas Kumar",
+      "title": "Technology Analyst",
+      "gender": "M",
+      "age": "30-35",
+      "harshness": 2,
+      "speciality": [
+        "java",
+        "oops",
+        "os"
+      ],
+      "tic": "Right, right.",
+      "pet_peeve": "buzzwords used without understanding",
+      "style": "Rapid-fire. An incomplete answer just gets the next question — no reassurance."
+    },
+    {
+      "id": "p_amazon_sde2",
+      "name": "Kabir Malhotra",
+      "title": "SDE II",
+      "gender": "M",
+      "age": "28-32",
+      "harshness": 3,
+      "speciality": [
+        "dsa",
+        "complexity",
+        "edge cases"
+      ],
+      "tic": "Hmm. Okay.",
+      "pet_peeve": "writing code before thinking",
+      "style": "Looks friendly and lets nothing go. Drops a hint and watches whether it gets picked up. Never satisfied with brute force."
+    },
+    {
+      "id": "p_amazon_sdm",
+      "name": "Ananya Desai",
+      "title": "Software Development Manager",
+      "gender": "F",
+      "age": "38-42",
+      "harshness": 2,
+      "speciality": [
+        "leadership principles",
+        "ownership",
+        "project depth"
+      ],
+      "tic": "Tell me more about that.",
+      "pet_peeve": "saying we when asked about I",
+      "style": "Digs every behavioral answer down to the data. Stops them the moment she hears we."
+    },
+    {
+      "id": "p_google_swe",
+      "name": "Rohan Verma",
+      "title": "Software Engineer III",
+      "gender": "M",
+      "age": "29-33",
+      "harshness": 2,
+      "speciality": [
+        "dsa",
+        "problem decomposition"
+      ],
+      "tic": "Interesting —",
+      "pet_peeve": "not asking a clarifying question",
+      "style": "Wants to hear the thinking out loud. If you go quiet he asks what you are thinking."
+    },
+    {
+      "id": "p_startup_founder",
+      "name": "Aditya Shetty",
+      "title": "Engineering Manager",
+      "gender": "M",
+      "age": "31-35",
+      "harshness": 3,
+      "speciality": [
+        "project reality",
+        "trade-offs",
+        "shipping"
+      ],
+      "tic": "Wait, hold on —",
+      "pet_peeve": "claiming a tutorial project as your own",
+      "style": "Casual, fast, entirely unfiltered. Spots waffle instantly and says so."
+    },
+    {
+      "id": "p_startup_sde",
+      "name": "Nikita Bansal",
+      "title": "SDE II",
+      "gender": "F",
+      "age": "26-30",
+      "harshness": 2,
+      "speciality": [
+        "lld",
+        "clean code",
+        "api design"
+      ],
+      "tic": "So basically —",
+      "pet_peeve": "building a God class",
+      "style": "Practical. Asks what the code will look like, not what the theory says."
+    },
+    {
+      "id": "p_gcc_vp",
+      "name": "Suresh Narayanan",
+      "title": "Vice President, Technology",
+      "gender": "M",
+      "age": "45-52",
+      "harshness": 2,
+      "speciality": [
+        "fundamentals",
+        "communication",
+        "structured thinking"
+      ],
+      "tic": "Let me ask you this —",
+      "pet_peeve": "answering without structure",
+      "style": "Formal, senior, a little distant. Looking for clarity and maturity."
+    },
+    {
+      "id": "p_gcc_analyst",
+      "name": "Priya Menon",
+      "title": "Senior Associate",
+      "gender": "F",
+      "age": "27-31",
+      "harshness": 1,
+      "speciality": [
+        "sql",
+        "aptitude",
+        "case structuring"
+      ],
+      "tic": "Got it.",
+      "pet_peeve": "quoting a number without stating the assumption",
+      "style": "Takes notes, says little, and every question is precise."
+    },
+    {
+      "id": "p_quiet_observer",
+      "name": "Vikram Joshi",
+      "title": "Principal Engineer",
+      "gender": "M",
+      "age": "40-45",
+      "harshness": 3,
+      "speciality": [
+        "depth",
+        "first principles"
+      ],
+      "tic": "",
+      "pet_peeve": "surface-level answer",
+      "style": "Speaks two or three times in a whole round — and it is always the hardest question in it."
+    },
+    {
+      "id": "p_friendly_junior",
+      "name": "Sneha Kulkarni",
+      "title": "SDE I",
+      "gender": "F",
+      "age": "24-27",
+      "harshness": 1,
+      "speciality": [
+        "dsa basics",
+        "projects"
+      ],
+      "tic": "Cool, cool.",
+      "pet_peeve": "over-confidence",
+      "style": "The newest panelist, and a warm one — but she catches a technical mistake instantly."
+    }
+  ],
+  "salary_note": "Approximate total CTC in lakhs per annum. It varies with campus versus off-campus, with college tier and with track. Product-company figures include stock, which vests over years.",
+  "companies": [
+    {
+      "signature_behaviour": "Makes you write code in the tech round, and in HR confirms your commitment to the bond and to being posted anywhere.",
+      "notes": "NQT cycle-based hiring on the TCS iON platform. The Ninja, Digital and Prime tracks are decided by NQT score.",
+      "verified_on": "2026-09-05",
+      "id": "tcs",
+      "name": "TCS",
+      "category": "service",
+      "difficulty": 2,
+      "panel_style": "Formal and a little dry. Rapid-fire on CS fundamentals, with heavy weight on communication.",
+      "interviewer_titles": [
+        "Technical Lead",
+        "Project Manager",
+        "HR"
+      ],
+      "persona_pool": [
+        "p_tcs_senior",
+        "p_infy_panel",
+        "p_tcs_hr",
+        "p_gcc_vp"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "TCS NQT (Aptitude + Coding)",
+          "type": "aptitude",
+          "minutes": 90,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "fundamentals",
+          "name": "Technical Interview",
+          "type": "cs_fundamentals",
+          "minutes": 35,
+          "focus": [
+            "oops",
+            "dbms",
+            "os",
+            "cn",
+            "sql",
+            "one language deep"
+          ],
+          "must_do": [
+            "Never accept a definition — immediately ask for an example, or where they used it in code",
+            "Go two or three layers deep on one topic before moving to the next",
+            "If it sounds memorised, go straight to an application question",
+            "Have them write code on paper once — pseudo-code is fine"
+          ]
+        },
+        {
+          "id": "project",
+          "name": "Project & Resume Deep-Dive",
+          "type": "project",
+          "minutes": 35,
+          "focus": [
+            "ownership",
+            "technical depth",
+            "trade-offs",
+            "honesty"
+          ],
+          "must_do": [
+            "Pick the project at the top of the resume",
+            "Not what was built — ask what THEY personally wrote",
+            "Take one design choice and ask why that, and why not the alternative",
+            "Ask what happens when it fails — push on the failure mode",
+            "If the answers stay vague, say you are not convinced — politely, but plainly"
+          ]
+        },
+        {
+          "id": "managerial",
+          "name": "Managerial Round (MR)",
+          "type": "managerial",
+          "minutes": 30,
+          "focus": [
+            "conflict",
+            "deadlines",
+            "teamwork",
+            "learning ability",
+            "relocation"
+          ],
+          "must_do": [
+            "Check for STAR structure — ask for both the situation and the result"
+          ]
+        },
+        {
+          "id": "hr",
+          "name": "HR Round",
+          "type": "hr",
+          "minutes": 20,
+          "focus": [
+            "self intro",
+            "strengths/weakness",
+            "why this company",
+            "goals",
+            "salary",
+            "bond",
+            "service agreement / bond",
+            "relocation anywhere in India"
+          ],
+          "must_do": [
+            "Catch the rehearsed answer — everyone says that, ask for their own example",
+            "Follow up on the weakness: what did they actually do about it?"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "Ninja",
+          "ctc": [
+            3.36,
+            3.36
+          ],
+          "note": "The base NQT track"
+        },
+        {
+          "title": "Digital",
+          "ctc": [
+            7,
+            7.5
+          ],
+          "note": "For a high NQT score"
+        },
+        {
+          "title": "Prime",
+          "ctc": [
+            9,
+            11.5
+          ],
+          "note": "The top track, with its own interview"
+        }
+      ]
+    },
+    {
+      "signature_behaviour": "Picks one language off your resume and goes deep in it — you wrote Java, so the questions will be in Java.",
+      "notes": "For tier-2 and tier-3 colleges, InfyTQ certification and HackWithInfy matter more than CGPA.",
+      "verified_on": "2026-09-05",
+      "id": "infosys",
+      "name": "Infosys",
+      "category": "service",
+      "difficulty": 2,
+      "panel_style": "Formal and a little dry. Rapid-fire on CS fundamentals, with heavy weight on communication.",
+      "interviewer_titles": [
+        "Technical Lead",
+        "Project Manager",
+        "HR"
+      ],
+      "persona_pool": [
+        "p_tcs_senior",
+        "p_infy_panel",
+        "p_tcs_hr",
+        "p_gcc_vp"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "InfyTQ / HackWithInfy Assessment",
+          "type": "aptitude",
+          "minutes": 90,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "fundamentals",
+          "name": "Technical — CS Fundamentals",
+          "type": "cs_fundamentals",
+          "minutes": 30,
+          "focus": [
+            "oops",
+            "dbms",
+            "os",
+            "cn",
+            "sql",
+            "one language deep"
+          ],
+          "must_do": [
+            "Never accept a definition — immediately ask for an example, or where they used it in code",
+            "Go two or three layers deep on one topic before moving to the next",
+            "If it sounds memorised, go straight to an application question"
+          ]
+        },
+        {
+          "id": "project",
+          "name": "Project & Resume Deep-Dive",
+          "type": "project",
+          "minutes": 35,
+          "focus": [
+            "ownership",
+            "technical depth",
+            "trade-offs",
+            "honesty"
+          ],
+          "must_do": [
+            "Pick the project at the top of the resume",
+            "Not what was built — ask what THEY personally wrote",
+            "Take one design choice and ask why that, and why not the alternative",
+            "Ask what happens when it fails — push on the failure mode",
+            "If the answers stay vague, say you are not convinced — politely, but plainly"
+          ]
+        },
+        {
+          "id": "hr",
+          "name": "HR Round",
+          "type": "hr",
+          "minutes": 20,
+          "focus": [
+            "self intro",
+            "strengths/weakness",
+            "why this company",
+            "goals",
+            "salary",
+            "bond"
+          ],
+          "must_do": [
+            "Catch the rehearsed answer — everyone says that, ask for their own example",
+            "Follow up on the weakness: what did they actually do about it?"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "Systems Engineer",
+          "ctc": [
+            3.6,
+            3.6
+          ],
+          "note": ""
+        },
+        {
+          "title": "Digital Specialist Engineer",
+          "ctc": [
+            6.25,
+            6.5
+          ],
+          "note": "Via InfyTQ or HackWithInfy"
+        },
+        {
+          "title": "Power Programmer",
+          "ctc": [
+            9,
+            9.5
+          ],
+          "note": "HackWithInfy top rankers"
+        }
+      ]
+    },
+    {
+      "signature_behaviour": "Some campus drives include a group discussion, where you have to make your own opening to speak.",
+      "notes": "Elite National Talent Hunt. Not every drive includes a group discussion.",
+      "verified_on": "2026-09-05",
+      "id": "wipro",
+      "name": "Wipro",
+      "category": "service",
+      "difficulty": 2,
+      "panel_style": "Formal and a little dry. Rapid-fire on CS fundamentals, with heavy weight on communication.",
+      "interviewer_titles": [
+        "Technical Lead",
+        "Project Manager",
+        "HR"
+      ],
+      "persona_pool": [
+        "p_tcs_senior",
+        "p_infy_panel",
+        "p_tcs_hr",
+        "p_gcc_vp"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "Elite NTH Assessment",
+          "type": "aptitude",
+          "minutes": 90,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "gd",
+          "name": "Group Discussion",
+          "type": "gd",
+          "minutes": 15,
+          "focus": [
+            "clarity",
+            "listening",
+            "assertiveness"
+          ],
+          "must_do": [
+            "Have the other panelists raise counter-points so it becomes a real debate"
+          ]
+        },
+        {
+          "id": "fundamentals",
+          "name": "Technical — CS Fundamentals",
+          "type": "cs_fundamentals",
+          "minutes": 30,
+          "focus": [
+            "oops",
+            "dbms",
+            "os",
+            "cn",
+            "sql",
+            "one language deep"
+          ],
+          "must_do": [
+            "Never accept a definition — immediately ask for an example, or where they used it in code",
+            "Go two or three layers deep on one topic before moving to the next",
+            "If it sounds memorised, go straight to an application question"
+          ]
+        },
+        {
+          "id": "project",
+          "name": "Project & Resume Deep-Dive",
+          "type": "project",
+          "minutes": 35,
+          "focus": [
+            "ownership",
+            "technical depth",
+            "trade-offs",
+            "honesty"
+          ],
+          "must_do": [
+            "Pick the project at the top of the resume",
+            "Not what was built — ask what THEY personally wrote",
+            "Take one design choice and ask why that, and why not the alternative",
+            "Ask what happens when it fails — push on the failure mode",
+            "If the answers stay vague, say you are not convinced — politely, but plainly"
+          ]
+        },
+        {
+          "id": "hr",
+          "name": "HR Round",
+          "type": "hr",
+          "minutes": 20,
+          "focus": [
+            "self intro",
+            "strengths/weakness",
+            "why this company",
+            "goals",
+            "salary",
+            "bond"
+          ],
+          "must_do": [
+            "Catch the rehearsed answer — everyone says that, ask for their own example",
+            "Follow up on the weakness: what did they actually do about it?"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "Project Engineer",
+          "ctc": [
+            3.5,
+            3.5
+          ],
+          "note": "Elite NTH"
+        },
+        {
+          "title": "Turbo / WILP track",
+          "ctc": [
+            6.5,
+            7.5
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "signature_behaviour": "There is a separate communication assessment — English fluency is judged explicitly.",
+      "notes": "ASE vs Advanced ASE tracks. 6-stage process with game-based cognitive test.",
+      "verified_on": "2026-09-05",
+      "id": "accenture",
+      "name": "Accenture",
+      "category": "service",
+      "difficulty": 3,
+      "panel_style": "Formal and a little dry. Rapid-fire on CS fundamentals, with heavy weight on communication.",
+      "interviewer_titles": [
+        "Technical Lead",
+        "Project Manager",
+        "HR"
+      ],
+      "persona_pool": [
+        "p_tcs_senior",
+        "p_infy_panel",
+        "p_tcs_hr",
+        "p_gcc_vp"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "Cognitive + Technical Assessment (game-based)",
+          "type": "aptitude",
+          "minutes": 90,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "fundamentals",
+          "name": "Technical — CS Fundamentals",
+          "type": "cs_fundamentals",
+          "minutes": 30,
+          "focus": [
+            "oops",
+            "dbms",
+            "os",
+            "cn",
+            "sql",
+            "one language deep"
+          ],
+          "must_do": [
+            "Never accept a definition — immediately ask for an example, or where they used it in code",
+            "Go two or three layers deep on one topic before moving to the next",
+            "If it sounds memorised, go straight to an application question"
+          ]
+        },
+        {
+          "id": "project",
+          "name": "Project & Resume Deep-Dive",
+          "type": "project",
+          "minutes": 35,
+          "focus": [
+            "ownership",
+            "technical depth",
+            "trade-offs",
+            "honesty"
+          ],
+          "must_do": [
+            "Pick the project at the top of the resume",
+            "Not what was built — ask what THEY personally wrote",
+            "Take one design choice and ask why that, and why not the alternative",
+            "Ask what happens when it fails — push on the failure mode",
+            "If the answers stay vague, say you are not convinced — politely, but plainly"
+          ]
+        },
+        {
+          "id": "hr",
+          "name": "HR + Communication Assessment",
+          "type": "hr",
+          "minutes": 20,
+          "focus": [
+            "self intro",
+            "strengths/weakness",
+            "why this company",
+            "goals",
+            "salary",
+            "bond"
+          ],
+          "must_do": [
+            "Catch the rehearsed answer — everyone says that, ask for their own example",
+            "Follow up on the weakness: what did they actually do about it?"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "Associate Software Engineer",
+          "ctc": [
+            4.5,
+            4.5
+          ],
+          "note": ""
+        },
+        {
+          "title": "Advanced ASE",
+          "ctc": [
+            6.5,
+            6.5
+          ],
+          "note": "On assessment score"
+        }
+      ]
+    },
+    {
+      "signature_behaviour": "GenC, GenC Next and GenC Pro tracks — your assessment score decides which one you land in.",
+      "notes": "",
+      "verified_on": "2026-09-05",
+      "id": "cognizant",
+      "name": "Cognizant",
+      "category": "service",
+      "difficulty": 2,
+      "panel_style": "Formal and a little dry. Rapid-fire on CS fundamentals, with heavy weight on communication.",
+      "interviewer_titles": [
+        "Technical Lead",
+        "Project Manager",
+        "HR"
+      ],
+      "persona_pool": [
+        "p_tcs_senior",
+        "p_infy_panel",
+        "p_tcs_hr",
+        "p_gcc_vp"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "Online Assessment",
+          "type": "aptitude",
+          "minutes": 90,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "fundamentals",
+          "name": "Technical — CS Fundamentals",
+          "type": "cs_fundamentals",
+          "minutes": 30,
+          "focus": [
+            "oops",
+            "dbms",
+            "os",
+            "cn",
+            "sql",
+            "one language deep"
+          ],
+          "must_do": [
+            "Never accept a definition — immediately ask for an example, or where they used it in code",
+            "Go two or three layers deep on one topic before moving to the next",
+            "If it sounds memorised, go straight to an application question"
+          ]
+        },
+        {
+          "id": "project",
+          "name": "Project & Resume Deep-Dive",
+          "type": "project",
+          "minutes": 35,
+          "focus": [
+            "ownership",
+            "technical depth",
+            "trade-offs",
+            "honesty"
+          ],
+          "must_do": [
+            "Pick the project at the top of the resume",
+            "Not what was built — ask what THEY personally wrote",
+            "Take one design choice and ask why that, and why not the alternative",
+            "Ask what happens when it fails — push on the failure mode",
+            "If the answers stay vague, say you are not convinced — politely, but plainly"
+          ]
+        },
+        {
+          "id": "hr",
+          "name": "HR Round",
+          "type": "hr",
+          "minutes": 20,
+          "focus": [
+            "self intro",
+            "strengths/weakness",
+            "why this company",
+            "goals",
+            "salary",
+            "bond"
+          ],
+          "must_do": [
+            "Catch the rehearsed answer — everyone says that, ask for their own example",
+            "Follow up on the weakness: what did they actually do about it?"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "GenC",
+          "ctc": [
+            4,
+            4.5
+          ],
+          "note": ""
+        },
+        {
+          "title": "GenC Next",
+          "ctc": [
+            6.5,
+            6.5
+          ],
+          "note": ""
+        },
+        {
+          "title": "GenC Pro",
+          "ctc": [
+            9,
+            9.5
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "signature_behaviour": "There is an essay-writing round — written English is checked explicitly.",
+      "notes": "",
+      "verified_on": "2026-09-05",
+      "id": "capgemini",
+      "name": "Capgemini",
+      "category": "service",
+      "difficulty": 2,
+      "panel_style": "Formal and a little dry. Rapid-fire on CS fundamentals, with heavy weight on communication.",
+      "interviewer_titles": [
+        "Technical Lead",
+        "Project Manager",
+        "HR"
+      ],
+      "persona_pool": [
+        "p_tcs_senior",
+        "p_infy_panel",
+        "p_tcs_hr",
+        "p_gcc_vp"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "Game-based Aptitude + Technical",
+          "type": "aptitude",
+          "minutes": 90,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "fundamentals",
+          "name": "Technical — CS Fundamentals",
+          "type": "cs_fundamentals",
+          "minutes": 30,
+          "focus": [
+            "oops",
+            "dbms",
+            "os",
+            "cn",
+            "sql",
+            "one language deep"
+          ],
+          "must_do": [
+            "Never accept a definition — immediately ask for an example, or where they used it in code",
+            "Go two or three layers deep on one topic before moving to the next",
+            "If it sounds memorised, go straight to an application question"
+          ]
+        },
+        {
+          "id": "project",
+          "name": "Project & Resume Deep-Dive",
+          "type": "project",
+          "minutes": 35,
+          "focus": [
+            "ownership",
+            "technical depth",
+            "trade-offs",
+            "honesty"
+          ],
+          "must_do": [
+            "Pick the project at the top of the resume",
+            "Not what was built — ask what THEY personally wrote",
+            "Take one design choice and ask why that, and why not the alternative",
+            "Ask what happens when it fails — push on the failure mode",
+            "If the answers stay vague, say you are not convinced — politely, but plainly"
+          ]
+        },
+        {
+          "id": "hr",
+          "name": "HR Round",
+          "type": "hr",
+          "minutes": 20,
+          "focus": [
+            "self intro",
+            "strengths/weakness",
+            "why this company",
+            "goals",
+            "salary",
+            "bond"
+          ],
+          "must_do": [
+            "Catch the rehearsed answer — everyone says that, ask for their own example",
+            "Follow up on the weakness: what did they actually do about it?"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "Analyst",
+          "ctc": [
+            4.25,
+            4.25
+          ],
+          "note": ""
+        },
+        {
+          "title": "Senior Analyst",
+          "ctc": [
+            7.5,
+            8
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "signature_behaviour": "Fresher hiring asks how flexible you are about domain — infrastructure versus development.",
+      "notes": "",
+      "verified_on": "2026-09-05",
+      "id": "hcltech",
+      "name": "HCLTech",
+      "category": "service",
+      "difficulty": 2,
+      "panel_style": "Formal and a little dry. Rapid-fire on CS fundamentals, with heavy weight on communication.",
+      "interviewer_titles": [
+        "Technical Lead",
+        "Project Manager",
+        "HR"
+      ],
+      "persona_pool": [
+        "p_tcs_senior",
+        "p_infy_panel",
+        "p_tcs_hr",
+        "p_gcc_vp"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "Online Assessment",
+          "type": "aptitude",
+          "minutes": 90,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "fundamentals",
+          "name": "Technical — CS Fundamentals",
+          "type": "cs_fundamentals",
+          "minutes": 30,
+          "focus": [
+            "oops",
+            "dbms",
+            "os",
+            "cn",
+            "sql",
+            "one language deep"
+          ],
+          "must_do": [
+            "Never accept a definition — immediately ask for an example, or where they used it in code",
+            "Go two or three layers deep on one topic before moving to the next",
+            "If it sounds memorised, go straight to an application question"
+          ]
+        },
+        {
+          "id": "project",
+          "name": "Project & Resume Deep-Dive",
+          "type": "project",
+          "minutes": 35,
+          "focus": [
+            "ownership",
+            "technical depth",
+            "trade-offs",
+            "honesty"
+          ],
+          "must_do": [
+            "Pick the project at the top of the resume",
+            "Not what was built — ask what THEY personally wrote",
+            "Take one design choice and ask why that, and why not the alternative",
+            "Ask what happens when it fails — push on the failure mode",
+            "If the answers stay vague, say you are not convinced — politely, but plainly"
+          ]
+        },
+        {
+          "id": "hr",
+          "name": "HR Round",
+          "type": "hr",
+          "minutes": 20,
+          "focus": [
+            "self intro",
+            "strengths/weakness",
+            "why this company",
+            "goals",
+            "salary",
+            "bond"
+          ],
+          "must_do": [
+            "Catch the rehearsed answer — everyone says that, ask for their own example",
+            "Follow up on the weakness: what did they actually do about it?"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "Graduate Engineer Trainee",
+          "ctc": [
+            4.25,
+            4.5
+          ],
+          "note": ""
+        },
+        {
+          "title": "Software Engineer",
+          "ctc": [
+            6,
+            7.5
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "signature_behaviour": "Extra weight on the communication round, and the telecom domain comes up.",
+      "notes": "",
+      "verified_on": "2026-09-05",
+      "id": "techmahindra",
+      "name": "Tech Mahindra",
+      "category": "service",
+      "difficulty": 2,
+      "panel_style": "Formal and a little dry. Rapid-fire on CS fundamentals, with heavy weight on communication.",
+      "interviewer_titles": [
+        "Technical Lead",
+        "Project Manager",
+        "HR"
+      ],
+      "persona_pool": [
+        "p_tcs_senior",
+        "p_infy_panel",
+        "p_tcs_hr",
+        "p_gcc_vp"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "Online Assessment",
+          "type": "aptitude",
+          "minutes": 90,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "fundamentals",
+          "name": "Technical — CS Fundamentals",
+          "type": "cs_fundamentals",
+          "minutes": 30,
+          "focus": [
+            "oops",
+            "dbms",
+            "os",
+            "cn",
+            "sql",
+            "one language deep"
+          ],
+          "must_do": [
+            "Never accept a definition — immediately ask for an example, or where they used it in code",
+            "Go two or three layers deep on one topic before moving to the next",
+            "If it sounds memorised, go straight to an application question"
+          ]
+        },
+        {
+          "id": "project",
+          "name": "Project & Resume Deep-Dive",
+          "type": "project",
+          "minutes": 35,
+          "focus": [
+            "ownership",
+            "technical depth",
+            "trade-offs",
+            "honesty"
+          ],
+          "must_do": [
+            "Pick the project at the top of the resume",
+            "Not what was built — ask what THEY personally wrote",
+            "Take one design choice and ask why that, and why not the alternative",
+            "Ask what happens when it fails — push on the failure mode",
+            "If the answers stay vague, say you are not convinced — politely, but plainly"
+          ]
+        },
+        {
+          "id": "hr",
+          "name": "HR Round",
+          "type": "hr",
+          "minutes": 20,
+          "focus": [
+            "self intro",
+            "strengths/weakness",
+            "why this company",
+            "goals",
+            "salary",
+            "bond"
+          ],
+          "must_do": [
+            "Catch the rehearsed answer — everyone says that, ask for their own example",
+            "Follow up on the weakness: what did they actually do about it?"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "Associate Software Engineer",
+          "ctc": [
+            3.25,
+            4
+          ],
+          "note": ""
+        },
+        {
+          "title": "Software Engineer",
+          "ctc": [
+            5.5,
+            7
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "signature_behaviour": "The coding round is on the tougher side — DSA basics come up too.",
+      "notes": "",
+      "verified_on": "2026-09-05",
+      "id": "ltimindtree",
+      "name": "LTIMindtree",
+      "category": "service",
+      "difficulty": 3,
+      "panel_style": "Formal and a little dry. Rapid-fire on CS fundamentals, with heavy weight on communication.",
+      "interviewer_titles": [
+        "Technical Lead",
+        "Project Manager",
+        "HR"
+      ],
+      "persona_pool": [
+        "p_tcs_senior",
+        "p_infy_panel",
+        "p_tcs_hr",
+        "p_gcc_vp"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "Online Assessment",
+          "type": "aptitude",
+          "minutes": 90,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "fundamentals",
+          "name": "Technical — CS Fundamentals",
+          "type": "cs_fundamentals",
+          "minutes": 30,
+          "focus": [
+            "oops",
+            "dbms",
+            "os",
+            "cn",
+            "sql",
+            "one language deep"
+          ],
+          "must_do": [
+            "Never accept a definition — immediately ask for an example, or where they used it in code",
+            "Go two or three layers deep on one topic before moving to the next",
+            "If it sounds memorised, go straight to an application question"
+          ]
+        },
+        {
+          "id": "project",
+          "name": "Project & Resume Deep-Dive",
+          "type": "project",
+          "minutes": 35,
+          "focus": [
+            "ownership",
+            "technical depth",
+            "trade-offs",
+            "honesty"
+          ],
+          "must_do": [
+            "Pick the project at the top of the resume",
+            "Not what was built — ask what THEY personally wrote",
+            "Take one design choice and ask why that, and why not the alternative",
+            "Ask what happens when it fails — push on the failure mode",
+            "If the answers stay vague, say you are not convinced — politely, but plainly"
+          ]
+        },
+        {
+          "id": "hr",
+          "name": "HR Round",
+          "type": "hr",
+          "minutes": 20,
+          "focus": [
+            "self intro",
+            "strengths/weakness",
+            "why this company",
+            "goals",
+            "salary",
+            "bond"
+          ],
+          "must_do": [
+            "Catch the rehearsed answer — everyone says that, ask for their own example",
+            "Follow up on the weakness: what did they actually do about it?"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "Graduate Engineer Trainee",
+          "ctc": [
+            4,
+            4.5
+          ],
+          "note": ""
+        },
+        {
+          "title": "Senior Engineer",
+          "ctc": [
+            6.5,
+            8
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "signature_behaviour": "",
+      "notes": "",
+      "verified_on": "2026-09-05",
+      "id": "mphasis",
+      "name": "Mphasis",
+      "category": "service",
+      "difficulty": 2,
+      "panel_style": "Formal and a little dry. Rapid-fire on CS fundamentals, with heavy weight on communication.",
+      "interviewer_titles": [
+        "Technical Lead",
+        "Project Manager",
+        "HR"
+      ],
+      "persona_pool": [
+        "p_tcs_senior",
+        "p_infy_panel",
+        "p_tcs_hr",
+        "p_gcc_vp"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "Online Assessment",
+          "type": "aptitude",
+          "minutes": 90,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "fundamentals",
+          "name": "Technical — CS Fundamentals",
+          "type": "cs_fundamentals",
+          "minutes": 30,
+          "focus": [
+            "oops",
+            "dbms",
+            "os",
+            "cn",
+            "sql",
+            "one language deep"
+          ],
+          "must_do": [
+            "Never accept a definition — immediately ask for an example, or where they used it in code",
+            "Go two or three layers deep on one topic before moving to the next",
+            "If it sounds memorised, go straight to an application question"
+          ]
+        },
+        {
+          "id": "project",
+          "name": "Project & Resume Deep-Dive",
+          "type": "project",
+          "minutes": 35,
+          "focus": [
+            "ownership",
+            "technical depth",
+            "trade-offs",
+            "honesty"
+          ],
+          "must_do": [
+            "Pick the project at the top of the resume",
+            "Not what was built — ask what THEY personally wrote",
+            "Take one design choice and ask why that, and why not the alternative",
+            "Ask what happens when it fails — push on the failure mode",
+            "If the answers stay vague, say you are not convinced — politely, but plainly"
+          ]
+        },
+        {
+          "id": "hr",
+          "name": "HR Round",
+          "type": "hr",
+          "minutes": 20,
+          "focus": [
+            "self intro",
+            "strengths/weakness",
+            "why this company",
+            "goals",
+            "salary",
+            "bond"
+          ],
+          "must_do": [
+            "Catch the rehearsed answer — everyone says that, ask for their own example",
+            "Follow up on the weakness: what did they actually do about it?"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "Associate Software Engineer",
+          "ctc": [
+            4,
+            4.5
+          ],
+          "note": ""
+        },
+        {
+          "title": "Software Engineer",
+          "ctc": [
+            6,
+            7.5
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "signature_behaviour": "EVERY round carries at least one Leadership Principle behavioral question — that is the Amazon signature. Say we and they stop you on the spot.",
+      "notes": "16 Leadership Principles. There may also be a Bar Raiser round. Fresher CTC is around 18-26 LPA.",
+      "verified_on": "2026-09-05",
+      "id": "amazon",
+      "name": "Amazon",
+      "category": "product",
+      "difficulty": 5,
+      "panel_style": "Friendly, and they let nothing go. They drop hints and watch whether you pick them up.",
+      "interviewer_titles": [
+        "SDE II",
+        "Senior SDE",
+        "Engineering Manager"
+      ],
+      "persona_pool": [
+        "p_amazon_sde2",
+        "p_google_swe",
+        "p_quiet_observer",
+        "p_friendly_junior"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "Online Assessment (2 DSA + Work Style + Work Simulation)",
+          "type": "aptitude",
+          "minutes": 90,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "dsa",
+          "name": "Technical 1 — DSA",
+          "type": "dsa",
+          "minutes": 45,
+          "focus": [
+            "arrays",
+            "strings",
+            "hashmaps",
+            "trees",
+            "recursion",
+            "complexity"
+          ],
+          "must_do": [
+            "Ask for the approach before any code — start with how they would think about it",
+            "Once brute force arrives, ask them to optimise it; never hand over the solution",
+            "Make them state both time and space complexity",
+            "Raise one edge case they have missed",
+            "Slip one Leadership Principle behavioral question into the middle of the round"
+          ]
+        },
+        {
+          "id": "dsa2",
+          "name": "Technical 2 — DSA + Design-lite",
+          "type": "dsa",
+          "minutes": 45,
+          "focus": [
+            "arrays",
+            "strings",
+            "hashmaps",
+            "trees",
+            "recursion",
+            "complexity"
+          ],
+          "must_do": [
+            "Ask for the approach before any code — start with how they would think about it",
+            "Once brute force arrives, ask them to optimise it; never hand over the solution",
+            "Make them state both time and space complexity",
+            "Raise one edge case they have missed",
+            "Add a small design angle: how would this run for a million users"
+          ]
+        },
+        {
+          "id": "behavioral_lp",
+          "name": "Hiring Manager — Project + Leadership Principles",
+          "type": "hr",
+          "minutes": 45,
+          "focus": [
+            "ownership",
+            "dive deep",
+            "bias for action",
+            "deliver results"
+          ],
+          "must_do": [
+            "On every answer, ask what specifically THEY did — move them off we and onto I",
+            "Ask for the data: how much did it improve, in numbers"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "SDE-1",
+          "ctc": [
+            26,
+            45
+          ],
+          "note": "Base + sign-on + RSU"
+        },
+        {
+          "title": "Support Engineer",
+          "ctc": [
+            12,
+            18
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "signature_behaviour": "The As Appropriate (AA) round is taken by someone senior, and focuses on culture and growth mindset.",
+      "notes": "",
+      "verified_on": "2026-09-05",
+      "id": "microsoft",
+      "name": "Microsoft",
+      "category": "product",
+      "difficulty": 5,
+      "panel_style": "Friendly, and they let nothing go. They drop hints and watch whether you pick them up.",
+      "interviewer_titles": [
+        "SDE II",
+        "Senior SDE",
+        "Engineering Manager"
+      ],
+      "persona_pool": [
+        "p_amazon_sde2",
+        "p_google_swe",
+        "p_quiet_observer",
+        "p_friendly_junior"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "Online Assessment",
+          "type": "aptitude",
+          "minutes": 90,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "dsa",
+          "name": "Technical — DSA",
+          "type": "dsa",
+          "minutes": 45,
+          "focus": [
+            "arrays",
+            "strings",
+            "hashmaps",
+            "trees",
+            "recursion",
+            "complexity"
+          ],
+          "must_do": [
+            "Ask for the approach before any code — start with how they would think about it",
+            "Once brute force arrives, ask them to optimise it; never hand over the solution",
+            "Make them state both time and space complexity",
+            "Raise one edge case they have missed"
+          ]
+        },
+        {
+          "id": "dsa2",
+          "name": "Technical 2 — DSA + Design",
+          "type": "dsa",
+          "minutes": 45,
+          "focus": [
+            "arrays",
+            "strings",
+            "hashmaps",
+            "trees",
+            "recursion",
+            "complexity"
+          ],
+          "must_do": [
+            "Ask for the approach before any code — start with how they would think about it",
+            "Once brute force arrives, ask them to optimise it; never hand over the solution",
+            "Make them state both time and space complexity",
+            "Raise one edge case they have missed"
+          ]
+        },
+        {
+          "id": "project",
+          "name": "AA Round — Project + Culture Fit",
+          "type": "project",
+          "minutes": 35,
+          "focus": [
+            "ownership",
+            "technical depth",
+            "trade-offs",
+            "honesty"
+          ],
+          "must_do": [
+            "Pick the project at the top of the resume",
+            "Not what was built — ask what THEY personally wrote",
+            "Take one design choice and ask why that, and why not the alternative",
+            "Ask what happens when it fails — push on the failure mode",
+            "If the answers stay vague, say you are not convinced — politely, but plainly"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "SDE",
+          "ctc": [
+            40,
+            55
+          ],
+          "note": "Base + stock + bonus"
+        },
+        {
+          "title": "Support Engineer",
+          "ctc": [
+            15,
+            22
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "signature_behaviour": "Sitting in silence is not an option — the interviewer keeps asking what you are thinking. The process matters more than the solution.",
+      "notes": "",
+      "verified_on": "2026-09-05",
+      "id": "google",
+      "name": "Google",
+      "category": "product",
+      "difficulty": 5,
+      "panel_style": "Friendly, and they let nothing go. They drop hints and watch whether you pick them up.",
+      "interviewer_titles": [
+        "SDE II",
+        "Senior SDE",
+        "Engineering Manager"
+      ],
+      "persona_pool": [
+        "p_amazon_sde2",
+        "p_google_swe",
+        "p_quiet_observer",
+        "p_friendly_junior"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "Online Assessment",
+          "type": "aptitude",
+          "minutes": 90,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "dsa",
+          "name": "Technical — DSA",
+          "type": "dsa",
+          "minutes": 45,
+          "focus": [
+            "arrays",
+            "strings",
+            "hashmaps",
+            "trees",
+            "recursion",
+            "complexity"
+          ],
+          "must_do": [
+            "Ask for the approach before any code — start with how they would think about it",
+            "Once brute force arrives, ask them to optimise it; never hand over the solution",
+            "Make them state both time and space complexity",
+            "Raise one edge case they have missed"
+          ]
+        },
+        {
+          "id": "dsa2",
+          "name": "Technical 2 — DSA",
+          "type": "dsa",
+          "minutes": 45,
+          "focus": [
+            "arrays",
+            "strings",
+            "hashmaps",
+            "trees",
+            "recursion",
+            "complexity"
+          ],
+          "must_do": [
+            "Ask for the approach before any code — start with how they would think about it",
+            "Once brute force arrives, ask them to optimise it; never hand over the solution",
+            "Make them state both time and space complexity",
+            "Raise one edge case they have missed"
+          ]
+        },
+        {
+          "id": "project",
+          "name": "Googleyness & Leadership",
+          "type": "project",
+          "minutes": 35,
+          "focus": [
+            "ownership",
+            "technical depth",
+            "trade-offs",
+            "honesty"
+          ],
+          "must_do": [
+            "Pick the project at the top of the resume",
+            "Not what was built — ask what THEY personally wrote",
+            "Take one design choice and ask why that, and why not the alternative",
+            "Ask what happens when it fails — push on the failure mode",
+            "If the answers stay vague, say you are not convinced — politely, but plainly"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "Software Engineer L3",
+          "ctc": [
+            45,
+            65
+          ],
+          "note": "Base + stock + bonus"
+        }
+      ]
+    },
+    {
+      "signature_behaviour": "CS fundamentals and DSA in equal measure — OS and DBMS come up despite it being a product company.",
+      "notes": "",
+      "verified_on": "2026-09-05",
+      "id": "adobe",
+      "name": "Adobe",
+      "category": "product",
+      "difficulty": 4,
+      "panel_style": "Friendly, and they let nothing go. They drop hints and watch whether you pick them up.",
+      "interviewer_titles": [
+        "SDE II",
+        "Senior SDE",
+        "Engineering Manager"
+      ],
+      "persona_pool": [
+        "p_amazon_sde2",
+        "p_google_swe",
+        "p_quiet_observer",
+        "p_friendly_junior"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "Online Assessment",
+          "type": "aptitude",
+          "minutes": 90,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "dsa",
+          "name": "Technical — DSA",
+          "type": "dsa",
+          "minutes": 45,
+          "focus": [
+            "arrays",
+            "strings",
+            "hashmaps",
+            "trees",
+            "recursion",
+            "complexity"
+          ],
+          "must_do": [
+            "Ask for the approach before any code — start with how they would think about it",
+            "Once brute force arrives, ask them to optimise it; never hand over the solution",
+            "Make them state both time and space complexity",
+            "Raise one edge case they have missed"
+          ]
+        },
+        {
+          "id": "fundamentals",
+          "name": "Technical — CS Fundamentals",
+          "type": "cs_fundamentals",
+          "minutes": 40,
+          "focus": [
+            "oops",
+            "dbms",
+            "os",
+            "cn",
+            "sql",
+            "one language deep"
+          ],
+          "must_do": [
+            "Never accept a definition — immediately ask for an example, or where they used it in code",
+            "Go two or three layers deep on one topic before moving to the next",
+            "If it sounds memorised, go straight to an application question"
+          ]
+        },
+        {
+          "id": "project",
+          "name": "Project & Resume Deep-Dive",
+          "type": "project",
+          "minutes": 35,
+          "focus": [
+            "ownership",
+            "technical depth",
+            "trade-offs",
+            "honesty"
+          ],
+          "must_do": [
+            "Pick the project at the top of the resume",
+            "Not what was built — ask what THEY personally wrote",
+            "Take one design choice and ask why that, and why not the alternative",
+            "Ask what happens when it fails — push on the failure mode",
+            "If the answers stay vague, say you are not convinced — politely, but plainly"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "MTS-1 (Member of Technical Staff)",
+          "ctc": [
+            28,
+            40
+          ],
+          "note": ""
+        },
+        {
+          "title": "Software Engineer",
+          "ctc": [
+            22,
+            32
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "signature_behaviour": "There is a separate values round, with direct questions on Atlassian's five values.",
+      "notes": "",
+      "verified_on": "2026-09-05",
+      "id": "atlassian",
+      "name": "Atlassian",
+      "category": "product",
+      "difficulty": 4,
+      "panel_style": "Friendly, and they let nothing go. They drop hints and watch whether you pick them up.",
+      "interviewer_titles": [
+        "SDE II",
+        "Senior SDE",
+        "Engineering Manager"
+      ],
+      "persona_pool": [
+        "p_amazon_sde2",
+        "p_google_swe",
+        "p_quiet_observer",
+        "p_friendly_junior"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "Online Assessment",
+          "type": "aptitude",
+          "minutes": 90,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "dsa",
+          "name": "Technical — DSA",
+          "type": "dsa",
+          "minutes": 45,
+          "focus": [
+            "arrays",
+            "strings",
+            "hashmaps",
+            "trees",
+            "recursion",
+            "complexity"
+          ],
+          "must_do": [
+            "Ask for the approach before any code — start with how they would think about it",
+            "Once brute force arrives, ask them to optimise it; never hand over the solution",
+            "Make them state both time and space complexity",
+            "Raise one edge case they have missed"
+          ]
+        },
+        {
+          "id": "lld",
+          "name": "Machine Coding / Low-Level Design",
+          "type": "lld",
+          "minutes": 60,
+          "focus": [
+            "class design",
+            "SOLID",
+            "extensibility",
+            "edge cases"
+          ],
+          "must_do": [
+            "Give the requirements deliberately incomplete — see whether they clarify or assume",
+            "Once the design stands, add a new requirement and ask what it changes"
+          ]
+        },
+        {
+          "id": "project",
+          "name": "Values Round",
+          "type": "project",
+          "minutes": 35,
+          "focus": [
+            "ownership",
+            "technical depth",
+            "trade-offs",
+            "honesty"
+          ],
+          "must_do": [
+            "Pick the project at the top of the resume",
+            "Not what was built — ask what THEY personally wrote",
+            "Take one design choice and ask why that, and why not the alternative",
+            "Ask what happens when it fails — push on the failure mode",
+            "If the answers stay vague, say you are not convinced — politely, but plainly"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "Software Engineer",
+          "ctc": [
+            30,
+            45
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "signature_behaviour": "",
+      "notes": "",
+      "verified_on": "2026-09-05",
+      "id": "salesforce",
+      "name": "Salesforce",
+      "category": "product",
+      "difficulty": 4,
+      "panel_style": "Friendly, and they let nothing go. They drop hints and watch whether you pick them up.",
+      "interviewer_titles": [
+        "SDE II",
+        "Senior SDE",
+        "Engineering Manager"
+      ],
+      "persona_pool": [
+        "p_amazon_sde2",
+        "p_google_swe",
+        "p_quiet_observer",
+        "p_friendly_junior"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "Online Assessment",
+          "type": "aptitude",
+          "minutes": 90,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "dsa",
+          "name": "Technical — DSA",
+          "type": "dsa",
+          "minutes": 45,
+          "focus": [
+            "arrays",
+            "strings",
+            "hashmaps",
+            "trees",
+            "recursion",
+            "complexity"
+          ],
+          "must_do": [
+            "Ask for the approach before any code — start with how they would think about it",
+            "Once brute force arrives, ask them to optimise it; never hand over the solution",
+            "Make them state both time and space complexity",
+            "Raise one edge case they have missed"
+          ]
+        },
+        {
+          "id": "dsa2",
+          "name": "Technical 2 — DSA",
+          "type": "dsa",
+          "minutes": 45,
+          "focus": [
+            "arrays",
+            "strings",
+            "hashmaps",
+            "trees",
+            "recursion",
+            "complexity"
+          ],
+          "must_do": [
+            "Ask for the approach before any code — start with how they would think about it",
+            "Once brute force arrives, ask them to optimise it; never hand over the solution",
+            "Make them state both time and space complexity",
+            "Raise one edge case they have missed"
+          ]
+        },
+        {
+          "id": "project",
+          "name": "Project & Resume Deep-Dive",
+          "type": "project",
+          "minutes": 35,
+          "focus": [
+            "ownership",
+            "technical depth",
+            "trade-offs",
+            "honesty"
+          ],
+          "must_do": [
+            "Pick the project at the top of the resume",
+            "Not what was built — ask what THEY personally wrote",
+            "Take one design choice and ask why that, and why not the alternative",
+            "Ask what happens when it fails — push on the failure mode",
+            "If the answers stay vague, say you are not convinced — politely, but plainly"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "Associate MTS",
+          "ctc": [
+            25,
+            40
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "signature_behaviour": "An unusual amount of focus on DBMS and SQL — normalisation, indexing, query optimisation.",
+      "notes": "",
+      "verified_on": "2026-09-05",
+      "id": "oracle",
+      "name": "Oracle",
+      "category": "product",
+      "difficulty": 4,
+      "panel_style": "Friendly, and they let nothing go. They drop hints and watch whether you pick them up.",
+      "interviewer_titles": [
+        "SDE II",
+        "Senior SDE",
+        "Engineering Manager"
+      ],
+      "persona_pool": [
+        "p_amazon_sde2",
+        "p_google_swe",
+        "p_quiet_observer",
+        "p_friendly_junior"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "Online Assessment",
+          "type": "aptitude",
+          "minutes": 90,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "dsa",
+          "name": "Technical — DSA",
+          "type": "dsa",
+          "minutes": 45,
+          "focus": [
+            "arrays",
+            "strings",
+            "hashmaps",
+            "trees",
+            "recursion",
+            "complexity"
+          ],
+          "must_do": [
+            "Ask for the approach before any code — start with how they would think about it",
+            "Once brute force arrives, ask them to optimise it; never hand over the solution",
+            "Make them state both time and space complexity",
+            "Raise one edge case they have missed"
+          ]
+        },
+        {
+          "id": "fundamentals",
+          "name": "Technical — CS Fundamentals",
+          "type": "cs_fundamentals",
+          "minutes": 30,
+          "focus": [
+            "dbms",
+            "sql",
+            "os",
+            "oops"
+          ],
+          "must_do": [
+            "Never accept a definition — immediately ask for an example, or where they used it in code",
+            "Go two or three layers deep on one topic before moving to the next",
+            "If it sounds memorised, go straight to an application question"
+          ]
+        },
+        {
+          "id": "project",
+          "name": "Project & Resume Deep-Dive",
+          "type": "project",
+          "minutes": 35,
+          "focus": [
+            "ownership",
+            "technical depth",
+            "trade-offs",
+            "honesty"
+          ],
+          "must_do": [
+            "Pick the project at the top of the resume",
+            "Not what was built — ask what THEY personally wrote",
+            "Take one design choice and ask why that, and why not the alternative",
+            "Ask what happens when it fails — push on the failure mode",
+            "If the answers stay vague, say you are not convinced — politely, but plainly"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "Application Engineer",
+          "ctc": [
+            18,
+            28
+          ],
+          "note": ""
+        },
+        {
+          "title": "Member of Technical Staff",
+          "ctc": [
+            20,
+            30
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "signature_behaviour": "",
+      "notes": "",
+      "verified_on": "2026-09-05",
+      "id": "sap",
+      "name": "SAP",
+      "category": "product",
+      "difficulty": 3,
+      "panel_style": "Friendly, and they let nothing go. They drop hints and watch whether you pick them up.",
+      "interviewer_titles": [
+        "SDE II",
+        "Senior SDE",
+        "Engineering Manager"
+      ],
+      "persona_pool": [
+        "p_amazon_sde2",
+        "p_google_swe",
+        "p_quiet_observer",
+        "p_friendly_junior"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "Online Assessment",
+          "type": "aptitude",
+          "minutes": 90,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "dsa",
+          "name": "Technical — DSA",
+          "type": "dsa",
+          "minutes": 45,
+          "focus": [
+            "arrays",
+            "strings",
+            "hashmaps",
+            "trees",
+            "recursion",
+            "complexity"
+          ],
+          "must_do": [
+            "Ask for the approach before any code — start with how they would think about it",
+            "Once brute force arrives, ask them to optimise it; never hand over the solution",
+            "Make them state both time and space complexity",
+            "Raise one edge case they have missed"
+          ]
+        },
+        {
+          "id": "dsa2",
+          "name": "Technical 2 — DSA",
+          "type": "dsa",
+          "minutes": 45,
+          "focus": [
+            "arrays",
+            "strings",
+            "hashmaps",
+            "trees",
+            "recursion",
+            "complexity"
+          ],
+          "must_do": [
+            "Ask for the approach before any code — start with how they would think about it",
+            "Once brute force arrives, ask them to optimise it; never hand over the solution",
+            "Make them state both time and space complexity",
+            "Raise one edge case they have missed"
+          ]
+        },
+        {
+          "id": "project",
+          "name": "Project & Resume Deep-Dive",
+          "type": "project",
+          "minutes": 35,
+          "focus": [
+            "ownership",
+            "technical depth",
+            "trade-offs",
+            "honesty"
+          ],
+          "must_do": [
+            "Pick the project at the top of the resume",
+            "Not what was built — ask what THEY personally wrote",
+            "Take one design choice and ask why that, and why not the alternative",
+            "Ask what happens when it fails — push on the failure mode",
+            "If the answers stay vague, say you are not convinced — politely, but plainly"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "Associate Developer",
+          "ctc": [
+            18,
+            28
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "signature_behaviour": "They go very deep on computer networks — TCP handshake, routing, subnetting.",
+      "notes": "",
+      "verified_on": "2026-09-05",
+      "id": "cisco",
+      "name": "Cisco",
+      "category": "product",
+      "difficulty": 4,
+      "panel_style": "Friendly, and they let nothing go. They drop hints and watch whether you pick them up.",
+      "interviewer_titles": [
+        "SDE II",
+        "Senior SDE",
+        "Engineering Manager"
+      ],
+      "persona_pool": [
+        "p_amazon_sde2",
+        "p_google_swe",
+        "p_quiet_observer",
+        "p_friendly_junior"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "Online Assessment",
+          "type": "aptitude",
+          "minutes": 90,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "dsa",
+          "name": "Technical — DSA",
+          "type": "dsa",
+          "minutes": 45,
+          "focus": [
+            "arrays",
+            "strings",
+            "hashmaps",
+            "trees",
+            "recursion",
+            "complexity"
+          ],
+          "must_do": [
+            "Ask for the approach before any code — start with how they would think about it",
+            "Once brute force arrives, ask them to optimise it; never hand over the solution",
+            "Make them state both time and space complexity",
+            "Raise one edge case they have missed"
+          ]
+        },
+        {
+          "id": "fundamentals",
+          "name": "Technical — CS Fundamentals",
+          "type": "cs_fundamentals",
+          "minutes": 30,
+          "focus": [
+            "cn",
+            "os",
+            "tcp/ip",
+            "oops"
+          ],
+          "must_do": [
+            "Never accept a definition — immediately ask for an example, or where they used it in code",
+            "Go two or three layers deep on one topic before moving to the next",
+            "If it sounds memorised, go straight to an application question"
+          ]
+        },
+        {
+          "id": "project",
+          "name": "Project & Resume Deep-Dive",
+          "type": "project",
+          "minutes": 35,
+          "focus": [
+            "ownership",
+            "technical depth",
+            "trade-offs",
+            "honesty"
+          ],
+          "must_do": [
+            "Pick the project at the top of the resume",
+            "Not what was built — ask what THEY personally wrote",
+            "Take one design choice and ask why that, and why not the alternative",
+            "Ask what happens when it fails — push on the failure mode",
+            "If the answers stay vague, say you are not convinced — politely, but plainly"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "Software Engineer I",
+          "ctc": [
+            18,
+            28
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "signature_behaviour": "Focused on C and embedded/OS concepts — pointers, memory, bit manipulation.",
+      "notes": "",
+      "verified_on": "2026-09-05",
+      "id": "qualcomm",
+      "name": "Qualcomm",
+      "category": "product",
+      "difficulty": 4,
+      "panel_style": "Friendly, and they let nothing go. They drop hints and watch whether you pick them up.",
+      "interviewer_titles": [
+        "SDE II",
+        "Senior SDE",
+        "Engineering Manager"
+      ],
+      "persona_pool": [
+        "p_amazon_sde2",
+        "p_google_swe",
+        "p_quiet_observer",
+        "p_friendly_junior"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "Online Assessment",
+          "type": "aptitude",
+          "minutes": 90,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "dsa",
+          "name": "Technical — DSA",
+          "type": "dsa",
+          "minutes": 45,
+          "focus": [
+            "arrays",
+            "strings",
+            "hashmaps",
+            "trees",
+            "recursion",
+            "complexity"
+          ],
+          "must_do": [
+            "Ask for the approach before any code — start with how they would think about it",
+            "Once brute force arrives, ask them to optimise it; never hand over the solution",
+            "Make them state both time and space complexity",
+            "Raise one edge case they have missed"
+          ]
+        },
+        {
+          "id": "dsa2",
+          "name": "Technical 2 — DSA",
+          "type": "dsa",
+          "minutes": 45,
+          "focus": [
+            "arrays",
+            "strings",
+            "hashmaps",
+            "trees",
+            "recursion",
+            "complexity"
+          ],
+          "must_do": [
+            "Ask for the approach before any code — start with how they would think about it",
+            "Once brute force arrives, ask them to optimise it; never hand over the solution",
+            "Make them state both time and space complexity",
+            "Raise one edge case they have missed"
+          ]
+        },
+        {
+          "id": "project",
+          "name": "Project & Resume Deep-Dive",
+          "type": "project",
+          "minutes": 35,
+          "focus": [
+            "ownership",
+            "technical depth",
+            "trade-offs",
+            "honesty"
+          ],
+          "must_do": [
+            "Pick the project at the top of the resume",
+            "Not what was built — ask what THEY personally wrote",
+            "Take one design choice and ask why that, and why not the alternative",
+            "Ask what happens when it fails — push on the failure mode",
+            "If the answers stay vague, say you are not convinced — politely, but plainly"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "Engineer (Software)",
+          "ctc": [
+            20,
+            32
+          ],
+          "note": ""
+        },
+        {
+          "title": "Engineer (Hardware/DSP)",
+          "ctc": [
+            20,
+            32
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "signature_behaviour": "",
+      "notes": "",
+      "verified_on": "2026-09-05",
+      "id": "nvidia",
+      "name": "Nvidia",
+      "category": "product",
+      "difficulty": 5,
+      "panel_style": "Friendly, and they let nothing go. They drop hints and watch whether you pick them up.",
+      "interviewer_titles": [
+        "SDE II",
+        "Senior SDE",
+        "Engineering Manager"
+      ],
+      "persona_pool": [
+        "p_amazon_sde2",
+        "p_google_swe",
+        "p_quiet_observer",
+        "p_friendly_junior"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "Online Assessment",
+          "type": "aptitude",
+          "minutes": 90,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "dsa",
+          "name": "Technical — DSA",
+          "type": "dsa",
+          "minutes": 45,
+          "focus": [
+            "arrays",
+            "strings",
+            "hashmaps",
+            "trees",
+            "recursion",
+            "complexity"
+          ],
+          "must_do": [
+            "Ask for the approach before any code — start with how they would think about it",
+            "Once brute force arrives, ask them to optimise it; never hand over the solution",
+            "Make them state both time and space complexity",
+            "Raise one edge case they have missed"
+          ]
+        },
+        {
+          "id": "dsa2",
+          "name": "Technical 2 — DSA",
+          "type": "dsa",
+          "minutes": 45,
+          "focus": [
+            "arrays",
+            "strings",
+            "hashmaps",
+            "trees",
+            "recursion",
+            "complexity"
+          ],
+          "must_do": [
+            "Ask for the approach before any code — start with how they would think about it",
+            "Once brute force arrives, ask them to optimise it; never hand over the solution",
+            "Make them state both time and space complexity",
+            "Raise one edge case they have missed"
+          ]
+        },
+        {
+          "id": "project",
+          "name": "Project & Resume Deep-Dive",
+          "type": "project",
+          "minutes": 35,
+          "focus": [
+            "ownership",
+            "technical depth",
+            "trade-offs",
+            "honesty"
+          ],
+          "must_do": [
+            "Pick the project at the top of the resume",
+            "Not what was built — ask what THEY personally wrote",
+            "Take one design choice and ask why that, and why not the alternative",
+            "Ask what happens when it fails — push on the failure mode",
+            "If the answers stay vague, say you are not convinced — politely, but plainly"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "Software Engineer",
+          "ctc": [
+            25,
+            40
+          ],
+          "note": ""
+        },
+        {
+          "title": "System Software Engineer",
+          "ctc": [
+            25,
+            42
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "signature_behaviour": "",
+      "notes": "",
+      "verified_on": "2026-09-05",
+      "id": "uber",
+      "name": "Uber",
+      "category": "product",
+      "difficulty": 5,
+      "panel_style": "Friendly, and they let nothing go. They drop hints and watch whether you pick them up.",
+      "interviewer_titles": [
+        "SDE II",
+        "Senior SDE",
+        "Engineering Manager"
+      ],
+      "persona_pool": [
+        "p_amazon_sde2",
+        "p_google_swe",
+        "p_quiet_observer",
+        "p_friendly_junior"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "Online Assessment",
+          "type": "aptitude",
+          "minutes": 90,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "dsa",
+          "name": "Technical — DSA",
+          "type": "dsa",
+          "minutes": 45,
+          "focus": [
+            "arrays",
+            "strings",
+            "hashmaps",
+            "trees",
+            "recursion",
+            "complexity"
+          ],
+          "must_do": [
+            "Ask for the approach before any code — start with how they would think about it",
+            "Once brute force arrives, ask them to optimise it; never hand over the solution",
+            "Make them state both time and space complexity",
+            "Raise one edge case they have missed"
+          ]
+        },
+        {
+          "id": "dsa2",
+          "name": "Technical — DSA",
+          "type": "dsa",
+          "minutes": 45,
+          "focus": [
+            "arrays",
+            "strings",
+            "hashmaps",
+            "trees",
+            "recursion",
+            "complexity"
+          ],
+          "must_do": [
+            "Ask for the approach before any code — start with how they would think about it",
+            "Once brute force arrives, ask them to optimise it; never hand over the solution",
+            "Make them state both time and space complexity",
+            "Raise one edge case they have missed"
+          ]
+        },
+        {
+          "id": "hld",
+          "name": "System Design (fresher level)",
+          "type": "system_design",
+          "minutes": 45,
+          "focus": [
+            "API design",
+            "database choice",
+            "caching",
+            "scale basics"
+          ],
+          "must_do": [
+            "Do not ask a fresher about distributed consensus — stay at practical scale"
+          ]
+        },
+        {
+          "id": "project",
+          "name": "Project & Resume Deep-Dive",
+          "type": "project",
+          "minutes": 35,
+          "focus": [
+            "ownership",
+            "technical depth",
+            "trade-offs",
+            "honesty"
+          ],
+          "must_do": [
+            "Pick the project at the top of the resume",
+            "Not what was built — ask what THEY personally wrote",
+            "Take one design choice and ask why that, and why not the alternative",
+            "Ask what happens when it fails — push on the failure mode",
+            "If the answers stay vague, say you are not convinced — politely, but plainly"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "Software Engineer I",
+          "ctc": [
+            35,
+            55
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "signature_behaviour": "The machine coding round wants running code in 60-90 minutes — the design and the working code both.",
+      "notes": "",
+      "verified_on": "2026-09-05",
+      "id": "flipkart",
+      "name": "Flipkart",
+      "category": "product",
+      "difficulty": 4,
+      "panel_style": "Friendly, and they let nothing go. They drop hints and watch whether you pick them up.",
+      "interviewer_titles": [
+        "SDE II",
+        "Senior SDE",
+        "Engineering Manager"
+      ],
+      "persona_pool": [
+        "p_amazon_sde2",
+        "p_google_swe",
+        "p_quiet_observer",
+        "p_friendly_junior"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "Online Assessment",
+          "type": "aptitude",
+          "minutes": 90,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "dsa",
+          "name": "Technical — DSA",
+          "type": "dsa",
+          "minutes": 45,
+          "focus": [
+            "arrays",
+            "strings",
+            "hashmaps",
+            "trees",
+            "recursion",
+            "complexity"
+          ],
+          "must_do": [
+            "Ask for the approach before any code — start with how they would think about it",
+            "Once brute force arrives, ask them to optimise it; never hand over the solution",
+            "Make them state both time and space complexity",
+            "Raise one edge case they have missed"
+          ]
+        },
+        {
+          "id": "lld",
+          "name": "Machine Coding Round",
+          "type": "lld",
+          "minutes": 60,
+          "focus": [
+            "class design",
+            "SOLID",
+            "extensibility",
+            "edge cases"
+          ],
+          "must_do": [
+            "Give the requirements deliberately incomplete — see whether they clarify or assume",
+            "Once the design stands, add a new requirement and ask what it changes"
+          ]
+        },
+        {
+          "id": "project",
+          "name": "Hiring Manager Round",
+          "type": "project",
+          "minutes": 35,
+          "focus": [
+            "ownership",
+            "technical depth",
+            "trade-offs",
+            "honesty"
+          ],
+          "must_do": [
+            "Pick the project at the top of the resume",
+            "Not what was built — ask what THEY personally wrote",
+            "Take one design choice and ask why that, and why not the alternative",
+            "Ask what happens when it fails — push on the failure mode",
+            "If the answers stay vague, say you are not convinced — politely, but plainly"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "SDE-1",
+          "ctc": [
+            25,
+            38
+          ],
+          "note": "Base + ESOP"
+        }
+      ]
+    },
+    {
+      "signature_behaviour": "",
+      "notes": "",
+      "verified_on": "2026-09-05",
+      "id": "walmart",
+      "name": "Walmart Global Tech",
+      "category": "product",
+      "difficulty": 4,
+      "panel_style": "Friendly, and they let nothing go. They drop hints and watch whether you pick them up.",
+      "interviewer_titles": [
+        "SDE II",
+        "Senior SDE",
+        "Engineering Manager"
+      ],
+      "persona_pool": [
+        "p_amazon_sde2",
+        "p_google_swe",
+        "p_quiet_observer",
+        "p_friendly_junior"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "Online Assessment",
+          "type": "aptitude",
+          "minutes": 90,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "dsa",
+          "name": "Technical — DSA",
+          "type": "dsa",
+          "minutes": 45,
+          "focus": [
+            "arrays",
+            "strings",
+            "hashmaps",
+            "trees",
+            "recursion",
+            "complexity"
+          ],
+          "must_do": [
+            "Ask for the approach before any code — start with how they would think about it",
+            "Once brute force arrives, ask them to optimise it; never hand over the solution",
+            "Make them state both time and space complexity",
+            "Raise one edge case they have missed"
+          ]
+        },
+        {
+          "id": "dsa2",
+          "name": "Technical 2 — DSA",
+          "type": "dsa",
+          "minutes": 45,
+          "focus": [
+            "arrays",
+            "strings",
+            "hashmaps",
+            "trees",
+            "recursion",
+            "complexity"
+          ],
+          "must_do": [
+            "Ask for the approach before any code — start with how they would think about it",
+            "Once brute force arrives, ask them to optimise it; never hand over the solution",
+            "Make them state both time and space complexity",
+            "Raise one edge case they have missed"
+          ]
+        },
+        {
+          "id": "project",
+          "name": "Project & Resume Deep-Dive",
+          "type": "project",
+          "minutes": 35,
+          "focus": [
+            "ownership",
+            "technical depth",
+            "trade-offs",
+            "honesty"
+          ],
+          "must_do": [
+            "Pick the project at the top of the resume",
+            "Not what was built — ask what THEY personally wrote",
+            "Take one design choice and ask why that, and why not the alternative",
+            "Ask what happens when it fails — push on the failure mode",
+            "If the answers stay vague, say you are not convinced — politely, but plainly"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "Software Engineer III",
+          "ctc": [
+            25,
+            38
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "signature_behaviour": "",
+      "notes": "",
+      "verified_on": "2026-09-05",
+      "id": "phonepe",
+      "name": "PhonePe",
+      "category": "product",
+      "difficulty": 4,
+      "panel_style": "Friendly, and they let nothing go. They drop hints and watch whether you pick them up.",
+      "interviewer_titles": [
+        "SDE II",
+        "Senior SDE",
+        "Engineering Manager"
+      ],
+      "persona_pool": [
+        "p_amazon_sde2",
+        "p_google_swe",
+        "p_quiet_observer",
+        "p_friendly_junior"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "Online Assessment",
+          "type": "aptitude",
+          "minutes": 90,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "dsa",
+          "name": "Technical — DSA",
+          "type": "dsa",
+          "minutes": 45,
+          "focus": [
+            "arrays",
+            "strings",
+            "hashmaps",
+            "trees",
+            "recursion",
+            "complexity"
+          ],
+          "must_do": [
+            "Ask for the approach before any code — start with how they would think about it",
+            "Once brute force arrives, ask them to optimise it; never hand over the solution",
+            "Make them state both time and space complexity",
+            "Raise one edge case they have missed"
+          ]
+        },
+        {
+          "id": "lld",
+          "name": "Machine Coding / Low-Level Design",
+          "type": "lld",
+          "minutes": 60,
+          "focus": [
+            "class design",
+            "SOLID",
+            "extensibility",
+            "edge cases"
+          ],
+          "must_do": [
+            "Give the requirements deliberately incomplete — see whether they clarify or assume",
+            "Once the design stands, add a new requirement and ask what it changes"
+          ]
+        },
+        {
+          "id": "project",
+          "name": "Hiring Manager Round",
+          "type": "project",
+          "minutes": 35,
+          "focus": [
+            "ownership",
+            "technical depth",
+            "trade-offs",
+            "honesty"
+          ],
+          "must_do": [
+            "Pick the project at the top of the resume",
+            "Not what was built — ask what THEY personally wrote",
+            "Take one design choice and ask why that, and why not the alternative",
+            "Ask what happens when it fails — push on the failure mode",
+            "If the answers stay vague, say you are not convinced — politely, but plainly"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "SDE-1",
+          "ctc": [
+            28,
+            42
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "signature_behaviour": "The online test is one very hard problem in three hours — a real test of DSA depth.",
+      "notes": "",
+      "verified_on": "2026-09-05",
+      "id": "samsung",
+      "name": "Samsung R&D",
+      "category": "product",
+      "difficulty": 4,
+      "panel_style": "Friendly, and they let nothing go. They drop hints and watch whether you pick them up.",
+      "interviewer_titles": [
+        "SDE II",
+        "Senior SDE",
+        "Engineering Manager"
+      ],
+      "persona_pool": [
+        "p_amazon_sde2",
+        "p_google_swe",
+        "p_quiet_observer",
+        "p_friendly_junior"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "Samsung Online Test (3 hr, 1 hard problem)",
+          "type": "aptitude",
+          "minutes": 90,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "dsa",
+          "name": "Technical — DSA",
+          "type": "dsa",
+          "minutes": 45,
+          "focus": [
+            "arrays",
+            "strings",
+            "hashmaps",
+            "trees",
+            "recursion",
+            "complexity"
+          ],
+          "must_do": [
+            "Ask for the approach before any code — start with how they would think about it",
+            "Once brute force arrives, ask them to optimise it; never hand over the solution",
+            "Make them state both time and space complexity",
+            "Raise one edge case they have missed"
+          ]
+        },
+        {
+          "id": "fundamentals",
+          "name": "Technical — CS Fundamentals",
+          "type": "cs_fundamentals",
+          "minutes": 30,
+          "focus": [
+            "oops",
+            "dbms",
+            "os",
+            "cn",
+            "sql",
+            "one language deep"
+          ],
+          "must_do": [
+            "Never accept a definition — immediately ask for an example, or where they used it in code",
+            "Go two or three layers deep on one topic before moving to the next",
+            "If it sounds memorised, go straight to an application question"
+          ]
+        },
+        {
+          "id": "hr",
+          "name": "HR Round",
+          "type": "hr",
+          "minutes": 20,
+          "focus": [
+            "self intro",
+            "strengths/weakness",
+            "why this company",
+            "goals",
+            "salary",
+            "bond"
+          ],
+          "must_do": [
+            "Catch the rehearsed answer — everyone says that, ask for their own example",
+            "Follow up on the weakness: what did they actually do about it?"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "Software Engineer (SRI-B/SRI-N)",
+          "ctc": [
+            12,
+            22
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "signature_behaviour": "The managerial round decides it — people are cut here even after the tech went fine.",
+      "notes": "",
+      "verified_on": "2026-09-05",
+      "id": "zomato",
+      "name": "Zomato",
+      "category": "startup",
+      "difficulty": 4,
+      "panel_style": "Casual and fast, but very sharp. They spot waffle instantly and say so.",
+      "interviewer_titles": [
+        "SDE II",
+        "Engineering Manager",
+        "Tech Lead"
+      ],
+      "persona_pool": [
+        "p_startup_founder",
+        "p_startup_sde",
+        "p_friendly_junior"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "Online Coding Assessment (2-3 DSA + debugging)",
+          "type": "aptitude",
+          "minutes": 105,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "dsa",
+          "name": "Technical — DSA",
+          "type": "dsa",
+          "minutes": 45,
+          "focus": [
+            "arrays",
+            "strings",
+            "hashmaps",
+            "trees",
+            "recursion",
+            "complexity"
+          ],
+          "must_do": [
+            "Ask for the approach before any code — start with how they would think about it",
+            "Once brute force arrives, ask them to optimise it; never hand over the solution",
+            "Make them state both time and space complexity",
+            "Raise one edge case they have missed"
+          ]
+        },
+        {
+          "id": "hld",
+          "name": "Technical 2 — Backend + Design",
+          "type": "system_design",
+          "minutes": 45,
+          "focus": [
+            "API design",
+            "database choice",
+            "caching",
+            "scale basics"
+          ],
+          "must_do": [
+            "Do not ask a fresher about distributed consensus — stay at practical scale"
+          ]
+        },
+        {
+          "id": "managerial",
+          "name": "Managerial / Culture Fit",
+          "type": "managerial",
+          "minutes": 30,
+          "focus": [
+            "conflict",
+            "deadlines",
+            "teamwork",
+            "learning ability",
+            "relocation"
+          ],
+          "must_do": [
+            "Check for STAR structure — ask for both the situation and the result"
+          ]
+        },
+        {
+          "id": "hr",
+          "name": "HR Round",
+          "type": "hr",
+          "minutes": 20,
+          "focus": [
+            "self intro",
+            "strengths/weakness",
+            "why this company",
+            "goals",
+            "salary",
+            "bond"
+          ],
+          "must_do": [
+            "Catch the rehearsed answer — everyone says that, ask for their own example",
+            "Follow up on the weakness: what did they actually do about it?"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "SDE-1",
+          "ctc": [
+            20,
+            32
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "signature_behaviour": "They take you to real logistics and scale problems — how would you assign a delivery partner.",
+      "notes": "",
+      "verified_on": "2026-09-05",
+      "id": "swiggy",
+      "name": "Swiggy",
+      "category": "startup",
+      "difficulty": 4,
+      "panel_style": "Casual and fast, but very sharp. They spot waffle instantly and say so.",
+      "interviewer_titles": [
+        "SDE II",
+        "Engineering Manager",
+        "Tech Lead"
+      ],
+      "persona_pool": [
+        "p_startup_founder",
+        "p_startup_sde",
+        "p_friendly_junior"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "Online Assessment",
+          "type": "aptitude",
+          "minutes": 90,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "dsa",
+          "name": "Technical — DSA",
+          "type": "dsa",
+          "minutes": 45,
+          "focus": [
+            "arrays",
+            "strings",
+            "hashmaps",
+            "trees",
+            "recursion",
+            "complexity"
+          ],
+          "must_do": [
+            "Ask for the approach before any code — start with how they would think about it",
+            "Once brute force arrives, ask them to optimise it; never hand over the solution",
+            "Make them state both time and space complexity",
+            "Raise one edge case they have missed"
+          ]
+        },
+        {
+          "id": "lld",
+          "name": "Machine Coding / Low-Level Design",
+          "type": "lld",
+          "minutes": 60,
+          "focus": [
+            "class design",
+            "SOLID",
+            "extensibility",
+            "edge cases"
+          ],
+          "must_do": [
+            "Give the requirements deliberately incomplete — see whether they clarify or assume",
+            "Once the design stands, add a new requirement and ask what it changes"
+          ]
+        },
+        {
+          "id": "project",
+          "name": "Hiring Manager — Project + Culture",
+          "type": "project",
+          "minutes": 35,
+          "focus": [
+            "ownership",
+            "technical depth",
+            "trade-offs",
+            "honesty"
+          ],
+          "must_do": [
+            "Pick the project at the top of the resume",
+            "Not what was built — ask what THEY personally wrote",
+            "Take one design choice and ask why that, and why not the alternative",
+            "Ask what happens when it fails — push on the failure mode",
+            "If the answers stay vague, say you are not convinced — politely, but plainly"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "SDE-1",
+          "ctc": [
+            20,
+            32
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "signature_behaviour": "The LLD round is the heaviest — 30-40% of your prep belongs there. They ask about payment-domain edge cases.",
+      "notes": "",
+      "verified_on": "2026-09-05",
+      "id": "razorpay",
+      "name": "Razorpay",
+      "category": "startup",
+      "difficulty": 4,
+      "panel_style": "Casual and fast, but very sharp. They spot waffle instantly and say so.",
+      "interviewer_titles": [
+        "SDE II",
+        "Engineering Manager",
+        "Tech Lead"
+      ],
+      "persona_pool": [
+        "p_startup_founder",
+        "p_startup_sde",
+        "p_friendly_junior"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "Online Coding Assessment (DSA)",
+          "type": "aptitude",
+          "minutes": 90,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "dsa",
+          "name": "Technical — DSA",
+          "type": "dsa",
+          "minutes": 45,
+          "focus": [
+            "arrays",
+            "strings",
+            "hashmaps",
+            "trees",
+            "recursion",
+            "complexity"
+          ],
+          "must_do": [
+            "Ask for the approach before any code — start with how they would think about it",
+            "Once brute force arrives, ask them to optimise it; never hand over the solution",
+            "Make them state both time and space complexity",
+            "Raise one edge case they have missed"
+          ]
+        },
+        {
+          "id": "lld",
+          "name": "Low-Level Design Round",
+          "type": "lld",
+          "minutes": 60,
+          "focus": [
+            "class design",
+            "SOLID",
+            "extensibility",
+            "edge cases"
+          ],
+          "must_do": [
+            "Give the requirements deliberately incomplete — see whether they clarify or assume",
+            "Once the design stands, add a new requirement and ask what it changes"
+          ]
+        },
+        {
+          "id": "project",
+          "name": "Hiring Manager Round",
+          "type": "project",
+          "minutes": 35,
+          "focus": [
+            "ownership",
+            "technical depth",
+            "trade-offs",
+            "honesty"
+          ],
+          "must_do": [
+            "Pick the project at the top of the resume",
+            "Not what was built — ask what THEY personally wrote",
+            "Take one design choice and ask why that, and why not the alternative",
+            "Ask what happens when it fails — push on the failure mode",
+            "If the answers stay vague, say you are not convinced — politely, but plainly"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "SDE-1",
+          "ctc": [
+            20,
+            32
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "signature_behaviour": "Obsessed with design taste and code quality — would you really ship this code to production?",
+      "notes": "",
+      "verified_on": "2026-09-05",
+      "id": "cred",
+      "name": "CRED",
+      "category": "startup",
+      "difficulty": 5,
+      "panel_style": "Casual and fast, but very sharp. They spot waffle instantly and say so.",
+      "interviewer_titles": [
+        "SDE II",
+        "Engineering Manager",
+        "Tech Lead"
+      ],
+      "persona_pool": [
+        "p_startup_founder",
+        "p_startup_sde",
+        "p_friendly_junior"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "Online Assessment",
+          "type": "aptitude",
+          "minutes": 90,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "dsa",
+          "name": "Technical — DSA",
+          "type": "dsa",
+          "minutes": 45,
+          "focus": [
+            "arrays",
+            "strings",
+            "hashmaps",
+            "trees",
+            "recursion",
+            "complexity"
+          ],
+          "must_do": [
+            "Ask for the approach before any code — start with how they would think about it",
+            "Once brute force arrives, ask them to optimise it; never hand over the solution",
+            "Make them state both time and space complexity",
+            "Raise one edge case they have missed"
+          ]
+        },
+        {
+          "id": "lld",
+          "name": "Machine Coding / Low-Level Design",
+          "type": "lld",
+          "minutes": 60,
+          "focus": [
+            "class design",
+            "SOLID",
+            "extensibility",
+            "edge cases"
+          ],
+          "must_do": [
+            "Give the requirements deliberately incomplete — see whether they clarify or assume",
+            "Once the design stands, add a new requirement and ask what it changes"
+          ]
+        },
+        {
+          "id": "project",
+          "name": "Hiring Manager — Project + Culture",
+          "type": "project",
+          "minutes": 35,
+          "focus": [
+            "ownership",
+            "technical depth",
+            "trade-offs",
+            "honesty"
+          ],
+          "must_do": [
+            "Pick the project at the top of the resume",
+            "Not what was built — ask what THEY personally wrote",
+            "Take one design choice and ask why that, and why not the alternative",
+            "Ask what happens when it fails — push on the failure mode",
+            "If the answers stay vague, say you are not convinced — politely, but plainly"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "SDE-1",
+          "ctc": [
+            28,
+            45
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "signature_behaviour": "Obsessed with speed — how would you do this in ten minutes, about everything.",
+      "notes": "",
+      "verified_on": "2026-09-05",
+      "id": "zepto",
+      "name": "Zepto",
+      "category": "startup",
+      "difficulty": 4,
+      "panel_style": "Casual and fast, but very sharp. They spot waffle instantly and say so.",
+      "interviewer_titles": [
+        "SDE II",
+        "Engineering Manager",
+        "Tech Lead"
+      ],
+      "persona_pool": [
+        "p_startup_founder",
+        "p_startup_sde",
+        "p_friendly_junior"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "Online Assessment",
+          "type": "aptitude",
+          "minutes": 90,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "dsa",
+          "name": "Technical — DSA",
+          "type": "dsa",
+          "minutes": 45,
+          "focus": [
+            "arrays",
+            "strings",
+            "hashmaps",
+            "trees",
+            "recursion",
+            "complexity"
+          ],
+          "must_do": [
+            "Ask for the approach before any code — start with how they would think about it",
+            "Once brute force arrives, ask them to optimise it; never hand over the solution",
+            "Make them state both time and space complexity",
+            "Raise one edge case they have missed"
+          ]
+        },
+        {
+          "id": "lld",
+          "name": "Machine Coding / Low-Level Design",
+          "type": "lld",
+          "minutes": 60,
+          "focus": [
+            "class design",
+            "SOLID",
+            "extensibility",
+            "edge cases"
+          ],
+          "must_do": [
+            "Give the requirements deliberately incomplete — see whether they clarify or assume",
+            "Once the design stands, add a new requirement and ask what it changes"
+          ]
+        },
+        {
+          "id": "project",
+          "name": "Hiring Manager — Project + Culture",
+          "type": "project",
+          "minutes": 35,
+          "focus": [
+            "ownership",
+            "technical depth",
+            "trade-offs",
+            "honesty"
+          ],
+          "must_do": [
+            "Pick the project at the top of the resume",
+            "Not what was built — ask what THEY personally wrote",
+            "Take one design choice and ask why that, and why not the alternative",
+            "Ask what happens when it fails — push on the failure mode",
+            "If the answers stay vague, say you are not convinced — politely, but plainly"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "SDE-1",
+          "ctc": [
+            20,
+            35
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "signature_behaviour": "",
+      "notes": "",
+      "verified_on": "2026-09-05",
+      "id": "groww",
+      "name": "Groww",
+      "category": "startup",
+      "difficulty": 4,
+      "panel_style": "Casual and fast, but very sharp. They spot waffle instantly and say so.",
+      "interviewer_titles": [
+        "SDE II",
+        "Engineering Manager",
+        "Tech Lead"
+      ],
+      "persona_pool": [
+        "p_startup_founder",
+        "p_startup_sde",
+        "p_friendly_junior"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "Online Assessment",
+          "type": "aptitude",
+          "minutes": 90,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "dsa",
+          "name": "Technical — DSA",
+          "type": "dsa",
+          "minutes": 45,
+          "focus": [
+            "arrays",
+            "strings",
+            "hashmaps",
+            "trees",
+            "recursion",
+            "complexity"
+          ],
+          "must_do": [
+            "Ask for the approach before any code — start with how they would think about it",
+            "Once brute force arrives, ask them to optimise it; never hand over the solution",
+            "Make them state both time and space complexity",
+            "Raise one edge case they have missed"
+          ]
+        },
+        {
+          "id": "lld",
+          "name": "Machine Coding / Low-Level Design",
+          "type": "lld",
+          "minutes": 60,
+          "focus": [
+            "class design",
+            "SOLID",
+            "extensibility",
+            "edge cases"
+          ],
+          "must_do": [
+            "Give the requirements deliberately incomplete — see whether they clarify or assume",
+            "Once the design stands, add a new requirement and ask what it changes"
+          ]
+        },
+        {
+          "id": "project",
+          "name": "Hiring Manager — Project + Culture",
+          "type": "project",
+          "minutes": 35,
+          "focus": [
+            "ownership",
+            "technical depth",
+            "trade-offs",
+            "honesty"
+          ],
+          "must_do": [
+            "Pick the project at the top of the resume",
+            "Not what was built — ask what THEY personally wrote",
+            "Take one design choice and ask why that, and why not the alternative",
+            "Ask what happens when it fails — push on the failure mode",
+            "If the answers stay vague, say you are not convinced — politely, but plainly"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "SDE-1",
+          "ctc": [
+            25,
+            40
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "signature_behaviour": "",
+      "notes": "",
+      "verified_on": "2026-09-05",
+      "id": "meesho",
+      "name": "Meesho",
+      "category": "startup",
+      "difficulty": 4,
+      "panel_style": "Casual and fast, but very sharp. They spot waffle instantly and say so.",
+      "interviewer_titles": [
+        "SDE II",
+        "Engineering Manager",
+        "Tech Lead"
+      ],
+      "persona_pool": [
+        "p_startup_founder",
+        "p_startup_sde",
+        "p_friendly_junior"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "Online Assessment",
+          "type": "aptitude",
+          "minutes": 90,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "dsa",
+          "name": "Technical — DSA",
+          "type": "dsa",
+          "minutes": 45,
+          "focus": [
+            "arrays",
+            "strings",
+            "hashmaps",
+            "trees",
+            "recursion",
+            "complexity"
+          ],
+          "must_do": [
+            "Ask for the approach before any code — start with how they would think about it",
+            "Once brute force arrives, ask them to optimise it; never hand over the solution",
+            "Make them state both time and space complexity",
+            "Raise one edge case they have missed"
+          ]
+        },
+        {
+          "id": "lld",
+          "name": "Machine Coding / Low-Level Design",
+          "type": "lld",
+          "minutes": 60,
+          "focus": [
+            "class design",
+            "SOLID",
+            "extensibility",
+            "edge cases"
+          ],
+          "must_do": [
+            "Give the requirements deliberately incomplete — see whether they clarify or assume",
+            "Once the design stands, add a new requirement and ask what it changes"
+          ]
+        },
+        {
+          "id": "project",
+          "name": "Hiring Manager — Project + Culture",
+          "type": "project",
+          "minutes": 35,
+          "focus": [
+            "ownership",
+            "technical depth",
+            "trade-offs",
+            "honesty"
+          ],
+          "must_do": [
+            "Pick the project at the top of the resume",
+            "Not what was built — ask what THEY personally wrote",
+            "Take one design choice and ask why that, and why not the alternative",
+            "Ask what happens when it fails — push on the failure mode",
+            "If the answers stay vague, say you are not convinced — politely, but plainly"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "SDE-1",
+          "ctc": [
+            26,
+            40
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "signature_behaviour": "Questions about scale — what if ten million users arrive at once during a match?",
+      "notes": "",
+      "verified_on": "2026-09-05",
+      "id": "dream11",
+      "name": "Dream11",
+      "category": "startup",
+      "difficulty": 4,
+      "panel_style": "Casual and fast, but very sharp. They spot waffle instantly and say so.",
+      "interviewer_titles": [
+        "SDE II",
+        "Engineering Manager",
+        "Tech Lead"
+      ],
+      "persona_pool": [
+        "p_startup_founder",
+        "p_startup_sde",
+        "p_friendly_junior"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "Online Assessment",
+          "type": "aptitude",
+          "minutes": 90,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "dsa",
+          "name": "Technical — DSA",
+          "type": "dsa",
+          "minutes": 45,
+          "focus": [
+            "arrays",
+            "strings",
+            "hashmaps",
+            "trees",
+            "recursion",
+            "complexity"
+          ],
+          "must_do": [
+            "Ask for the approach before any code — start with how they would think about it",
+            "Once brute force arrives, ask them to optimise it; never hand over the solution",
+            "Make them state both time and space complexity",
+            "Raise one edge case they have missed"
+          ]
+        },
+        {
+          "id": "lld",
+          "name": "Machine Coding / Low-Level Design",
+          "type": "lld",
+          "minutes": 60,
+          "focus": [
+            "class design",
+            "SOLID",
+            "extensibility",
+            "edge cases"
+          ],
+          "must_do": [
+            "Give the requirements deliberately incomplete — see whether they clarify or assume",
+            "Once the design stands, add a new requirement and ask what it changes"
+          ]
+        },
+        {
+          "id": "project",
+          "name": "Hiring Manager — Project + Culture",
+          "type": "project",
+          "minutes": 35,
+          "focus": [
+            "ownership",
+            "technical depth",
+            "trade-offs",
+            "honesty"
+          ],
+          "must_do": [
+            "Pick the project at the top of the resume",
+            "Not what was built — ask what THEY personally wrote",
+            "Take one design choice and ask why that, and why not the alternative",
+            "Ask what happens when it fails — push on the failure mode",
+            "If the answers stay vague, say you are not convinced — politely, but plainly"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "SDE-1",
+          "ctc": [
+            24,
+            38
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "signature_behaviour": "",
+      "notes": "",
+      "verified_on": "2026-09-05",
+      "id": "sharechat",
+      "name": "ShareChat",
+      "category": "startup",
+      "difficulty": 4,
+      "panel_style": "Casual and fast, but very sharp. They spot waffle instantly and say so.",
+      "interviewer_titles": [
+        "SDE II",
+        "Engineering Manager",
+        "Tech Lead"
+      ],
+      "persona_pool": [
+        "p_startup_founder",
+        "p_startup_sde",
+        "p_friendly_junior"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "Online Assessment",
+          "type": "aptitude",
+          "minutes": 90,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "dsa",
+          "name": "Technical — DSA",
+          "type": "dsa",
+          "minutes": 45,
+          "focus": [
+            "arrays",
+            "strings",
+            "hashmaps",
+            "trees",
+            "recursion",
+            "complexity"
+          ],
+          "must_do": [
+            "Ask for the approach before any code — start with how they would think about it",
+            "Once brute force arrives, ask them to optimise it; never hand over the solution",
+            "Make them state both time and space complexity",
+            "Raise one edge case they have missed"
+          ]
+        },
+        {
+          "id": "lld",
+          "name": "Machine Coding / Low-Level Design",
+          "type": "lld",
+          "minutes": 60,
+          "focus": [
+            "class design",
+            "SOLID",
+            "extensibility",
+            "edge cases"
+          ],
+          "must_do": [
+            "Give the requirements deliberately incomplete — see whether they clarify or assume",
+            "Once the design stands, add a new requirement and ask what it changes"
+          ]
+        },
+        {
+          "id": "project",
+          "name": "Hiring Manager — Project + Culture",
+          "type": "project",
+          "minutes": 35,
+          "focus": [
+            "ownership",
+            "technical depth",
+            "trade-offs",
+            "honesty"
+          ],
+          "must_do": [
+            "Pick the project at the top of the resume",
+            "Not what was built — ask what THEY personally wrote",
+            "Take one design choice and ask why that, and why not the alternative",
+            "Ask what happens when it fails — push on the failure mode",
+            "If the answers stay vague, say you are not convinced — politely, but plainly"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "SDE-1",
+          "ctc": [
+            22,
+            35
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "signature_behaviour": "",
+      "notes": "",
+      "verified_on": "2026-09-05",
+      "id": "rapido",
+      "name": "Rapido",
+      "category": "startup",
+      "difficulty": 3,
+      "panel_style": "Casual and fast, but very sharp. They spot waffle instantly and say so.",
+      "interviewer_titles": [
+        "SDE II",
+        "Engineering Manager",
+        "Tech Lead"
+      ],
+      "persona_pool": [
+        "p_startup_founder",
+        "p_startup_sde",
+        "p_friendly_junior"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "Online Assessment",
+          "type": "aptitude",
+          "minutes": 90,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "dsa",
+          "name": "Technical — DSA",
+          "type": "dsa",
+          "minutes": 45,
+          "focus": [
+            "arrays",
+            "strings",
+            "hashmaps",
+            "trees",
+            "recursion",
+            "complexity"
+          ],
+          "must_do": [
+            "Ask for the approach before any code — start with how they would think about it",
+            "Once brute force arrives, ask them to optimise it; never hand over the solution",
+            "Make them state both time and space complexity",
+            "Raise one edge case they have missed"
+          ]
+        },
+        {
+          "id": "lld",
+          "name": "Machine Coding / Low-Level Design",
+          "type": "lld",
+          "minutes": 60,
+          "focus": [
+            "class design",
+            "SOLID",
+            "extensibility",
+            "edge cases"
+          ],
+          "must_do": [
+            "Give the requirements deliberately incomplete — see whether they clarify or assume",
+            "Once the design stands, add a new requirement and ask what it changes"
+          ]
+        },
+        {
+          "id": "project",
+          "name": "Hiring Manager — Project + Culture",
+          "type": "project",
+          "minutes": 35,
+          "focus": [
+            "ownership",
+            "technical depth",
+            "trade-offs",
+            "honesty"
+          ],
+          "must_do": [
+            "Pick the project at the top of the resume",
+            "Not what was built — ask what THEY personally wrote",
+            "Take one design choice and ask why that, and why not the alternative",
+            "Ask what happens when it fails — push on the failure mode",
+            "If the answers stay vague, say you are not convinced — politely, but plainly"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "SDE-1",
+          "ctc": [
+            15,
+            25
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "signature_behaviour": "",
+      "notes": "",
+      "verified_on": "2026-09-05",
+      "id": "physicswallah",
+      "name": "Physics Wallah",
+      "category": "startup",
+      "difficulty": 3,
+      "panel_style": "Casual and fast, but very sharp. They spot waffle instantly and say so.",
+      "interviewer_titles": [
+        "SDE II",
+        "Engineering Manager",
+        "Tech Lead"
+      ],
+      "persona_pool": [
+        "p_startup_founder",
+        "p_startup_sde",
+        "p_friendly_junior"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "Online Assessment",
+          "type": "aptitude",
+          "minutes": 90,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "dsa",
+          "name": "Technical — DSA",
+          "type": "dsa",
+          "minutes": 45,
+          "focus": [
+            "arrays",
+            "strings",
+            "hashmaps",
+            "trees",
+            "recursion",
+            "complexity"
+          ],
+          "must_do": [
+            "Ask for the approach before any code — start with how they would think about it",
+            "Once brute force arrives, ask them to optimise it; never hand over the solution",
+            "Make them state both time and space complexity",
+            "Raise one edge case they have missed"
+          ]
+        },
+        {
+          "id": "lld",
+          "name": "Machine Coding / Low-Level Design",
+          "type": "lld",
+          "minutes": 60,
+          "focus": [
+            "class design",
+            "SOLID",
+            "extensibility",
+            "edge cases"
+          ],
+          "must_do": [
+            "Give the requirements deliberately incomplete — see whether they clarify or assume",
+            "Once the design stands, add a new requirement and ask what it changes"
+          ]
+        },
+        {
+          "id": "project",
+          "name": "Hiring Manager — Project + Culture",
+          "type": "project",
+          "minutes": 35,
+          "focus": [
+            "ownership",
+            "technical depth",
+            "trade-offs",
+            "honesty"
+          ],
+          "must_do": [
+            "Pick the project at the top of the resume",
+            "Not what was built — ask what THEY personally wrote",
+            "Take one design choice and ask why that, and why not the alternative",
+            "Ask what happens when it fails — push on the failure mode",
+            "If the answers stay vague, say you are not convinced — politely, but plainly"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "SDE-1",
+          "ctc": [
+            12,
+            22
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "signature_behaviour": "A consulting flavour — alongside the technical, they ask how you would explain it to a client.",
+      "notes": "",
+      "verified_on": "2026-09-05",
+      "id": "deloitte",
+      "name": "Deloitte",
+      "category": "gcc",
+      "difficulty": 3,
+      "panel_style": "A formal panel. Structured thinking and communication carry as much weight as the tech.",
+      "interviewer_titles": [
+        "Vice President",
+        "Senior Associate",
+        "HR"
+      ],
+      "persona_pool": [
+        "p_gcc_vp",
+        "p_gcc_analyst",
+        "p_tcs_hr",
+        "p_quiet_observer"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "Online Assessment",
+          "type": "aptitude",
+          "minutes": 90,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "fundamentals",
+          "name": "Technical — CS Fundamentals",
+          "type": "cs_fundamentals",
+          "minutes": 30,
+          "focus": [
+            "oops",
+            "dbms",
+            "os",
+            "cn",
+            "sql",
+            "one language deep"
+          ],
+          "must_do": [
+            "Never accept a definition — immediately ask for an example, or where they used it in code",
+            "Go two or three layers deep on one topic before moving to the next",
+            "If it sounds memorised, go straight to an application question"
+          ]
+        },
+        {
+          "id": "case",
+          "name": "Case / Guesstimate Round",
+          "type": "case",
+          "minutes": 30,
+          "focus": [
+            "structuring",
+            "assumptions",
+            "arithmetic out loud"
+          ],
+          "must_do": [
+            "If a number arrives without a stated assumption, stop them there"
+          ]
+        },
+        {
+          "id": "hr",
+          "name": "HR Round",
+          "type": "hr",
+          "minutes": 20,
+          "focus": [
+            "self intro",
+            "strengths/weakness",
+            "why this company",
+            "goals",
+            "salary",
+            "bond"
+          ],
+          "must_do": [
+            "Catch the rehearsed answer — everyone says that, ask for their own example",
+            "Follow up on the weakness: what did they actually do about it?"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "Analyst",
+          "ctc": [
+            6.5,
+            9
+          ],
+          "note": ""
+        },
+        {
+          "title": "Consultant",
+          "ctc": [
+            9,
+            13
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "signature_behaviour": "",
+      "notes": "",
+      "verified_on": "2026-09-05",
+      "id": "ey",
+      "name": "EY",
+      "category": "gcc",
+      "difficulty": 3,
+      "panel_style": "A formal panel. Structured thinking and communication carry as much weight as the tech.",
+      "interviewer_titles": [
+        "Vice President",
+        "Senior Associate",
+        "HR"
+      ],
+      "persona_pool": [
+        "p_gcc_vp",
+        "p_gcc_analyst",
+        "p_tcs_hr",
+        "p_quiet_observer"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "Online Assessment",
+          "type": "aptitude",
+          "minutes": 90,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "fundamentals",
+          "name": "Technical — CS Fundamentals",
+          "type": "cs_fundamentals",
+          "minutes": 30,
+          "focus": [
+            "oops",
+            "dbms",
+            "os",
+            "cn",
+            "sql",
+            "one language deep"
+          ],
+          "must_do": [
+            "Never accept a definition — immediately ask for an example, or where they used it in code",
+            "Go two or three layers deep on one topic before moving to the next",
+            "If it sounds memorised, go straight to an application question"
+          ]
+        },
+        {
+          "id": "case",
+          "name": "Case / Guesstimate Round",
+          "type": "case",
+          "minutes": 30,
+          "focus": [
+            "structuring",
+            "assumptions",
+            "arithmetic out loud"
+          ],
+          "must_do": [
+            "If a number arrives without a stated assumption, stop them there"
+          ]
+        },
+        {
+          "id": "hr",
+          "name": "HR Round",
+          "type": "hr",
+          "minutes": 20,
+          "focus": [
+            "self intro",
+            "strengths/weakness",
+            "why this company",
+            "goals",
+            "salary",
+            "bond"
+          ],
+          "must_do": [
+            "Catch the rehearsed answer — everyone says that, ask for their own example",
+            "Follow up on the weakness: what did they actually do about it?"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "Analyst",
+          "ctc": [
+            6,
+            9
+          ],
+          "note": ""
+        },
+        {
+          "title": "Senior Analyst",
+          "ctc": [
+            9,
+            12
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "signature_behaviour": "",
+      "notes": "",
+      "verified_on": "2026-09-05",
+      "id": "pwc",
+      "name": "PwC",
+      "category": "gcc",
+      "difficulty": 3,
+      "panel_style": "A formal panel. Structured thinking and communication carry as much weight as the tech.",
+      "interviewer_titles": [
+        "Vice President",
+        "Senior Associate",
+        "HR"
+      ],
+      "persona_pool": [
+        "p_gcc_vp",
+        "p_gcc_analyst",
+        "p_tcs_hr",
+        "p_quiet_observer"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "Online Assessment",
+          "type": "aptitude",
+          "minutes": 90,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "fundamentals",
+          "name": "Technical — CS Fundamentals",
+          "type": "cs_fundamentals",
+          "minutes": 30,
+          "focus": [
+            "oops",
+            "dbms",
+            "os",
+            "cn",
+            "sql",
+            "one language deep"
+          ],
+          "must_do": [
+            "Never accept a definition — immediately ask for an example, or where they used it in code",
+            "Go two or three layers deep on one topic before moving to the next",
+            "If it sounds memorised, go straight to an application question"
+          ]
+        },
+        {
+          "id": "case",
+          "name": "Case / Guesstimate Round",
+          "type": "case",
+          "minutes": 30,
+          "focus": [
+            "structuring",
+            "assumptions",
+            "arithmetic out loud"
+          ],
+          "must_do": [
+            "If a number arrives without a stated assumption, stop them there"
+          ]
+        },
+        {
+          "id": "hr",
+          "name": "HR Round",
+          "type": "hr",
+          "minutes": 20,
+          "focus": [
+            "self intro",
+            "strengths/weakness",
+            "why this company",
+            "goals",
+            "salary",
+            "bond"
+          ],
+          "must_do": [
+            "Catch the rehearsed answer — everyone says that, ask for their own example",
+            "Follow up on the weakness: what did they actually do about it?"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "Associate",
+          "ctc": [
+            6.5,
+            9.5
+          ],
+          "note": ""
+        },
+        {
+          "title": "Senior Associate",
+          "ctc": [
+            10,
+            14
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "signature_behaviour": "",
+      "notes": "",
+      "verified_on": "2026-09-05",
+      "id": "kpmg",
+      "name": "KPMG",
+      "category": "gcc",
+      "difficulty": 3,
+      "panel_style": "A formal panel. Structured thinking and communication carry as much weight as the tech.",
+      "interviewer_titles": [
+        "Vice President",
+        "Senior Associate",
+        "HR"
+      ],
+      "persona_pool": [
+        "p_gcc_vp",
+        "p_gcc_analyst",
+        "p_tcs_hr",
+        "p_quiet_observer"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "Online Assessment",
+          "type": "aptitude",
+          "minutes": 90,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "fundamentals",
+          "name": "Technical — CS Fundamentals",
+          "type": "cs_fundamentals",
+          "minutes": 30,
+          "focus": [
+            "oops",
+            "dbms",
+            "os",
+            "cn",
+            "sql",
+            "one language deep"
+          ],
+          "must_do": [
+            "Never accept a definition — immediately ask for an example, or where they used it in code",
+            "Go two or three layers deep on one topic before moving to the next",
+            "If it sounds memorised, go straight to an application question"
+          ]
+        },
+        {
+          "id": "case",
+          "name": "Case / Guesstimate Round",
+          "type": "case",
+          "minutes": 30,
+          "focus": [
+            "structuring",
+            "assumptions",
+            "arithmetic out loud"
+          ],
+          "must_do": [
+            "If a number arrives without a stated assumption, stop them there"
+          ]
+        },
+        {
+          "id": "hr",
+          "name": "HR Round",
+          "type": "hr",
+          "minutes": 20,
+          "focus": [
+            "self intro",
+            "strengths/weakness",
+            "why this company",
+            "goals",
+            "salary",
+            "bond"
+          ],
+          "must_do": [
+            "Catch the rehearsed answer — everyone says that, ask for their own example",
+            "Follow up on the weakness: what did they actually do about it?"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "Analyst",
+          "ctc": [
+            6,
+            9
+          ],
+          "note": ""
+        },
+        {
+          "title": "Consultant",
+          "ctc": [
+            9,
+            12
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "signature_behaviour": "There is a one-way HireVue video round — you speak to a camera alone, with no reaction coming back.",
+      "notes": "Two or three technical rounds. Graphs, DP and system design basics are common.",
+      "verified_on": "2026-09-05",
+      "id": "jpmc",
+      "name": "JPMorgan Chase",
+      "category": "gcc",
+      "difficulty": 4,
+      "panel_style": "A formal panel. Structured thinking and communication carry as much weight as the tech.",
+      "interviewer_titles": [
+        "Vice President",
+        "Senior Associate",
+        "HR"
+      ],
+      "persona_pool": [
+        "p_gcc_vp",
+        "p_gcc_analyst",
+        "p_tcs_hr",
+        "p_quiet_observer"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "HireVue Video Assessment + Coding",
+          "type": "aptitude",
+          "minutes": 90,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "dsa",
+          "name": "Technical — DSA",
+          "type": "dsa",
+          "minutes": 45,
+          "focus": [
+            "arrays",
+            "strings",
+            "hashmaps",
+            "trees",
+            "recursion",
+            "complexity"
+          ],
+          "must_do": [
+            "Ask for the approach before any code — start with how they would think about it",
+            "Once brute force arrives, ask them to optimise it; never hand over the solution",
+            "Make them state both time and space complexity",
+            "Raise one edge case they have missed"
+          ]
+        },
+        {
+          "id": "fundamentals",
+          "name": "Technical — CS Fundamentals",
+          "type": "cs_fundamentals",
+          "minutes": 30,
+          "focus": [
+            "oops",
+            "dbms",
+            "os",
+            "cn",
+            "sql",
+            "one language deep"
+          ],
+          "must_do": [
+            "Never accept a definition — immediately ask for an example, or where they used it in code",
+            "Go two or three layers deep on one topic before moving to the next",
+            "If it sounds memorised, go straight to an application question"
+          ]
+        },
+        {
+          "id": "hr",
+          "name": "Behavioral / Fit",
+          "type": "hr",
+          "minutes": 20,
+          "focus": [
+            "self intro",
+            "strengths/weakness",
+            "why this company",
+            "goals",
+            "salary",
+            "bond"
+          ],
+          "must_do": [
+            "Catch the rehearsed answer — everyone says that, ask for their own example",
+            "Follow up on the weakness: what did they actually do about it?"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "Software Engineer I",
+          "ctc": [
+            18,
+            27
+          ],
+          "note": "CIB / Corporate Technology"
+        }
+      ]
+    },
+    {
+      "signature_behaviour": "Probability and maths puzzles arrive alongside the DSA. Every round is an elimination.",
+      "notes": "Three elimination rounds is typical, with calls alongside a VP and serving engineers.",
+      "verified_on": "2026-09-05",
+      "id": "goldman",
+      "name": "Goldman Sachs",
+      "category": "gcc",
+      "difficulty": 5,
+      "panel_style": "A formal panel. Structured thinking and communication carry as much weight as the tech.",
+      "interviewer_titles": [
+        "Vice President",
+        "Senior Associate",
+        "HR"
+      ],
+      "persona_pool": [
+        "p_gcc_vp",
+        "p_gcc_analyst",
+        "p_tcs_hr",
+        "p_quiet_observer"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "HackerRank Online Test",
+          "type": "aptitude",
+          "minutes": 90,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "dsa",
+          "name": "Technical — DSA",
+          "type": "dsa",
+          "minutes": 45,
+          "focus": [
+            "arrays",
+            "strings",
+            "hashmaps",
+            "trees",
+            "recursion",
+            "complexity"
+          ],
+          "must_do": [
+            "Ask for the approach before any code — start with how they would think about it",
+            "Once brute force arrives, ask them to optimise it; never hand over the solution",
+            "Make them state both time and space complexity",
+            "Raise one edge case they have missed"
+          ]
+        },
+        {
+          "id": "dsa2",
+          "name": "Technical 2 — DSA + Maths",
+          "type": "dsa",
+          "minutes": 45,
+          "focus": [
+            "arrays",
+            "strings",
+            "hashmaps",
+            "trees",
+            "recursion",
+            "complexity"
+          ],
+          "must_do": [
+            "Ask for the approach before any code — start with how they would think about it",
+            "Once brute force arrives, ask them to optimise it; never hand over the solution",
+            "Make them state both time and space complexity",
+            "Raise one edge case they have missed"
+          ]
+        },
+        {
+          "id": "hr",
+          "name": "VP Round",
+          "type": "hr",
+          "minutes": 20,
+          "focus": [
+            "self intro",
+            "strengths/weakness",
+            "why this company",
+            "goals",
+            "salary",
+            "bond"
+          ],
+          "must_do": [
+            "Catch the rehearsed answer — everyone says that, ask for their own example",
+            "Follow up on the weakness: what did they actually do about it?"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "Analyst — Engineering",
+          "ctc": [
+            20,
+            32
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "signature_behaviour": "",
+      "notes": "",
+      "verified_on": "2026-09-05",
+      "id": "morganstanley",
+      "name": "Morgan Stanley",
+      "category": "gcc",
+      "difficulty": 4,
+      "panel_style": "A formal panel. Structured thinking and communication carry as much weight as the tech.",
+      "interviewer_titles": [
+        "Vice President",
+        "Senior Associate",
+        "HR"
+      ],
+      "persona_pool": [
+        "p_gcc_vp",
+        "p_gcc_analyst",
+        "p_tcs_hr",
+        "p_quiet_observer"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "Online Assessment",
+          "type": "aptitude",
+          "minutes": 90,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "fundamentals",
+          "name": "Technical — CS Fundamentals",
+          "type": "cs_fundamentals",
+          "minutes": 30,
+          "focus": [
+            "oops",
+            "dbms",
+            "os",
+            "cn",
+            "sql",
+            "one language deep"
+          ],
+          "must_do": [
+            "Never accept a definition — immediately ask for an example, or where they used it in code",
+            "Go two or three layers deep on one topic before moving to the next",
+            "If it sounds memorised, go straight to an application question"
+          ]
+        },
+        {
+          "id": "project",
+          "name": "Project & Resume Deep-Dive",
+          "type": "project",
+          "minutes": 35,
+          "focus": [
+            "ownership",
+            "technical depth",
+            "trade-offs",
+            "honesty"
+          ],
+          "must_do": [
+            "Pick the project at the top of the resume",
+            "Not what was built — ask what THEY personally wrote",
+            "Take one design choice and ask why that, and why not the alternative",
+            "Ask what happens when it fails — push on the failure mode",
+            "If the answers stay vague, say you are not convinced — politely, but plainly"
+          ]
+        },
+        {
+          "id": "hr",
+          "name": "HR Round",
+          "type": "hr",
+          "minutes": 20,
+          "focus": [
+            "self intro",
+            "strengths/weakness",
+            "why this company",
+            "goals",
+            "salary",
+            "bond"
+          ],
+          "must_do": [
+            "Catch the rehearsed answer — everyone says that, ask for their own example",
+            "Follow up on the weakness: what did they actually do about it?"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "Technology Analyst",
+          "ctc": [
+            18,
+            28
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "signature_behaviour": "",
+      "notes": "",
+      "verified_on": "2026-09-05",
+      "id": "optum",
+      "name": "Optum / UnitedHealth",
+      "category": "gcc",
+      "difficulty": 3,
+      "panel_style": "A formal panel. Structured thinking and communication carry as much weight as the tech.",
+      "interviewer_titles": [
+        "Vice President",
+        "Senior Associate",
+        "HR"
+      ],
+      "persona_pool": [
+        "p_gcc_vp",
+        "p_gcc_analyst",
+        "p_tcs_hr",
+        "p_quiet_observer"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "Online Assessment",
+          "type": "aptitude",
+          "minutes": 90,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "fundamentals",
+          "name": "Technical — CS Fundamentals",
+          "type": "cs_fundamentals",
+          "minutes": 30,
+          "focus": [
+            "oops",
+            "dbms",
+            "os",
+            "cn",
+            "sql",
+            "one language deep"
+          ],
+          "must_do": [
+            "Never accept a definition — immediately ask for an example, or where they used it in code",
+            "Go two or three layers deep on one topic before moving to the next",
+            "If it sounds memorised, go straight to an application question"
+          ]
+        },
+        {
+          "id": "project",
+          "name": "Project & Resume Deep-Dive",
+          "type": "project",
+          "minutes": 35,
+          "focus": [
+            "ownership",
+            "technical depth",
+            "trade-offs",
+            "honesty"
+          ],
+          "must_do": [
+            "Pick the project at the top of the resume",
+            "Not what was built — ask what THEY personally wrote",
+            "Take one design choice and ask why that, and why not the alternative",
+            "Ask what happens when it fails — push on the failure mode",
+            "If the answers stay vague, say you are not convinced — politely, but plainly"
+          ]
+        },
+        {
+          "id": "hr",
+          "name": "HR Round",
+          "type": "hr",
+          "minutes": 20,
+          "focus": [
+            "self intro",
+            "strengths/weakness",
+            "why this company",
+            "goals",
+            "salary",
+            "bond"
+          ],
+          "must_do": [
+            "Catch the rehearsed answer — everyone says that, ask for their own example",
+            "Follow up on the weakness: what did they actually do about it?"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "Software Engineer",
+          "ctc": [
+            10,
+            16
+          ],
+          "note": ""
+        },
+        {
+          "title": "Data Analyst",
+          "ctc": [
+            9,
+            14
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "signature_behaviour": "The guesstimate round is the core of it — how many auto-rickshaws are there in Delhi. Structure matters more than the answer.",
+      "notes": "",
+      "verified_on": "2026-09-05",
+      "id": "zs",
+      "name": "ZS Associates",
+      "category": "gcc",
+      "difficulty": 3,
+      "panel_style": "A formal panel. Structured thinking and communication carry as much weight as the tech.",
+      "interviewer_titles": [
+        "Vice President",
+        "Senior Associate",
+        "HR"
+      ],
+      "persona_pool": [
+        "p_gcc_vp",
+        "p_gcc_analyst",
+        "p_tcs_hr",
+        "p_quiet_observer"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "Online Assessment",
+          "type": "aptitude",
+          "minutes": 90,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "case",
+          "name": "Guesstimate / Case Round",
+          "type": "case",
+          "minutes": 35,
+          "focus": [
+            "structuring",
+            "assumptions",
+            "arithmetic out loud"
+          ],
+          "must_do": [
+            "If a number arrives without a stated assumption, stop them there"
+          ]
+        },
+        {
+          "id": "fundamentals",
+          "name": "Technical — CS Fundamentals",
+          "type": "cs_fundamentals",
+          "minutes": 30,
+          "focus": [
+            "sql",
+            "excel logic",
+            "python basics"
+          ],
+          "must_do": [
+            "Never accept a definition — immediately ask for an example, or where they used it in code",
+            "Go two or three layers deep on one topic before moving to the next",
+            "If it sounds memorised, go straight to an application question"
+          ]
+        },
+        {
+          "id": "hr",
+          "name": "HR Round",
+          "type": "hr",
+          "minutes": 20,
+          "focus": [
+            "self intro",
+            "strengths/weakness",
+            "why this company",
+            "goals",
+            "salary",
+            "bond"
+          ],
+          "must_do": [
+            "Catch the rehearsed answer — everyone says that, ask for their own example",
+            "Follow up on the weakness: what did they actually do about it?"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "Business Technology Solutions Associate",
+          "ctc": [
+            12,
+            18
+          ],
+          "note": ""
+        },
+        {
+          "title": "Decision Analytics Associate",
+          "ctc": [
+            12,
+            18
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "signature_behaviour": "",
+      "notes": "",
+      "verified_on": "2026-09-05",
+      "id": "barclays",
+      "name": "Barclays",
+      "category": "gcc",
+      "difficulty": 3,
+      "panel_style": "A formal panel. Structured thinking and communication carry as much weight as the tech.",
+      "interviewer_titles": [
+        "Vice President",
+        "Senior Associate",
+        "HR"
+      ],
+      "persona_pool": [
+        "p_gcc_vp",
+        "p_gcc_analyst",
+        "p_tcs_hr",
+        "p_quiet_observer"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "Online Assessment",
+          "type": "aptitude",
+          "minutes": 90,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "fundamentals",
+          "name": "Technical — CS Fundamentals",
+          "type": "cs_fundamentals",
+          "minutes": 30,
+          "focus": [
+            "oops",
+            "dbms",
+            "os",
+            "cn",
+            "sql",
+            "one language deep"
+          ],
+          "must_do": [
+            "Never accept a definition — immediately ask for an example, or where they used it in code",
+            "Go two or three layers deep on one topic before moving to the next",
+            "If it sounds memorised, go straight to an application question"
+          ]
+        },
+        {
+          "id": "project",
+          "name": "Project & Resume Deep-Dive",
+          "type": "project",
+          "minutes": 35,
+          "focus": [
+            "ownership",
+            "technical depth",
+            "trade-offs",
+            "honesty"
+          ],
+          "must_do": [
+            "Pick the project at the top of the resume",
+            "Not what was built — ask what THEY personally wrote",
+            "Take one design choice and ask why that, and why not the alternative",
+            "Ask what happens when it fails — push on the failure mode",
+            "If the answers stay vague, say you are not convinced — politely, but plainly"
+          ]
+        },
+        {
+          "id": "hr",
+          "name": "HR Round",
+          "type": "hr",
+          "minutes": 20,
+          "focus": [
+            "self intro",
+            "strengths/weakness",
+            "why this company",
+            "goals",
+            "salary",
+            "bond"
+          ],
+          "must_do": [
+            "Catch the rehearsed answer — everyone says that, ask for their own example",
+            "Follow up on the weakness: what did they actually do about it?"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "Technology Analyst",
+          "ctc": [
+            15,
+            24
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "signature_behaviour": "",
+      "notes": "",
+      "verified_on": "2026-09-05",
+      "id": "amex",
+      "name": "American Express",
+      "category": "gcc",
+      "difficulty": 3,
+      "panel_style": "A formal panel. Structured thinking and communication carry as much weight as the tech.",
+      "interviewer_titles": [
+        "Vice President",
+        "Senior Associate",
+        "HR"
+      ],
+      "persona_pool": [
+        "p_gcc_vp",
+        "p_gcc_analyst",
+        "p_tcs_hr",
+        "p_quiet_observer"
+      ],
+      "rounds": [
+        {
+          "id": "oa",
+          "name": "Online Assessment",
+          "type": "aptitude",
+          "minutes": 90,
+          "simulated": false,
+          "note": "The app does not simulate this — it happens on a coding platform."
+        },
+        {
+          "id": "fundamentals",
+          "name": "Technical — CS Fundamentals",
+          "type": "cs_fundamentals",
+          "minutes": 30,
+          "focus": [
+            "oops",
+            "dbms",
+            "os",
+            "cn",
+            "sql",
+            "one language deep"
+          ],
+          "must_do": [
+            "Never accept a definition — immediately ask for an example, or where they used it in code",
+            "Go two or three layers deep on one topic before moving to the next",
+            "If it sounds memorised, go straight to an application question"
+          ]
+        },
+        {
+          "id": "project",
+          "name": "Project & Resume Deep-Dive",
+          "type": "project",
+          "minutes": 35,
+          "focus": [
+            "ownership",
+            "technical depth",
+            "trade-offs",
+            "honesty"
+          ],
+          "must_do": [
+            "Pick the project at the top of the resume",
+            "Not what was built — ask what THEY personally wrote",
+            "Take one design choice and ask why that, and why not the alternative",
+            "Ask what happens when it fails — push on the failure mode",
+            "If the answers stay vague, say you are not convinced — politely, but plainly"
+          ]
+        },
+        {
+          "id": "hr",
+          "name": "HR Round",
+          "type": "hr",
+          "minutes": 20,
+          "focus": [
+            "self intro",
+            "strengths/weakness",
+            "why this company",
+            "goals",
+            "salary",
+            "bond"
+          ],
+          "must_do": [
+            "Catch the rehearsed answer — everyone says that, ask for their own example",
+            "Follow up on the weakness: what did they actually do about it?"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "Engineer I",
+          "ctc": [
+            16,
+            26
+          ],
+          "note": ""
+        },
+        {
+          "title": "Analyst",
+          "ctc": [
+            14,
+            22
+          ],
+          "note": ""
+        }
+      ]
+    }
+  ]
+}

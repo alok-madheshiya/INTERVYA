@@ -1,0 +1,96 @@
+{
+  "name": "intervya",
+  "version": "0.1.0",
+  "description": "Realistic video-call panel mock interview trainer for B.Tech CSE placements",
+  "main": "electron/main.cjs",
+  "type": "module",
+  "scripts": {
+    "start": "electron .",
+    "spike": "electron . --spike",
+    "build:win": "electron-builder --win",
+    "test": "node electron/services/prompt.test.cjs && node electron/services/report.test.cjs && node electron/services/retry.test.cjs && node electron/services/gemini.test.cjs && node electron/services/providers.test.cjs && node electron/services/chatapi.test.cjs && node electron/services/detect.test.cjs && node electron/services/llm.test.cjs && node electron/services/resume.test.cjs && node electron/services/zoom.test.cjs && node src/audio/hotwords.test.mjs && node src/audio/sentences.test.mjs && node src/audio/segments.test.mjs && node src/audio/systemVoice.test.mjs && node src/engine/director.test.mjs && node src/engine/stall.test.mjs",
+    "spike:auto": "electron . --spike --autorun",
+    "data": "node data/build-companies.mjs",
+    "build:vendor": "node scripts/build-vendor.mjs",
+    "fetch-models": "node scripts/fetch-models.mjs",
+    "check": "node -e \"const e=require('esbuild');const g=require('glob');\"",
+    "build-logos": "node data/build-logos.mjs"
+  },
+  "author": "Alok Madheshiya",
+  "license": "MIT",
+  "dependencies": {
+    "@google/genai": "^2.21.0",
+    "@huggingface/transformers": "^4.2.0",
+    "@met4citizen/headtts": "^1.3.0",
+    "@met4citizen/talkinghead": "^1.7.0",
+    "electron-store": "^10.0.0",
+    "pdfjs-dist": "^6.3.289",
+    "three": "^0.185.1",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@electron/fuses": "^2.1.3",
+    "electron": "^44.2.0",
+    "electron-builder": "^25.1.8",
+    "esbuild": "^0.28.2",
+    "simple-icons": "^16.30.0"
+  },
+  "build": {
+    "appId": "com.alokmadheshiya.intervya",
+    "productName": "Intervya",
+    "copyright": "Copyright © 2026 Alok Madheshiya",
+    "directories": {
+      "buildResources": "build",
+      "output": "dist"
+    },
+    "afterPack": "scripts/afterPack.cjs",
+    "asar": true,
+    "asarUnpack": [
+      "models/**",
+      "vendor/ort/**"
+    ],
+    "files": [
+      "**/*",
+      "!spike/**",
+      "!design/**",
+      "!scripts/**",
+      "!dist/**",
+      "!build/**",
+      "!**/*.test.cjs",
+      "!**/*.test.mjs",
+      "!**/*.map",
+      "!*.bat",
+      "!*.lnk",
+      "!*.py",
+      "!data/build-*.mjs",
+      "!node_modules/onnxruntime-node/**",
+      "!node_modules/onnxruntime-web/**",
+      "!node_modules/@huggingface/transformers/**",
+      "!node_modules/sharp/**",
+      "!node_modules/@img/**",
+      "node_modules/three/examples/**"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Intervya",
+      "artifactName": "Intervya-Setup-${version}.${ext}",
+      "uninstallDisplayName": "Intervya"
+    },
+    "onNodeModuleFile": "scripts/onNodeModuleFile.cjs"
+  }
+}

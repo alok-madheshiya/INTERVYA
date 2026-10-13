@@ -1,0 +1,16 @@
+# Dependencies and build output
+node_modules/
+dist/
+.cache/
+*.log
+
+# Large files fetched or generated locally rather than tracked:
+# the ONNX weights for speech recognition and the panel's voice, the bundled
+# transformers build, and the 3D avatars the panel grid downloads on first run.
+models/
+vendor/
+assets/avatars/*.glb
+
+# Local shortcuts and scratch
+Intervya.lnk
+video/

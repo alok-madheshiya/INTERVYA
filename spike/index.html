@@ -1,0 +1,132 @@
+<meta charset="utf-8">
+<title>Intervya — Phase 0 Spike</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: #0d0d11; color: #e8e8ee;
+    font: 14px/1.5 "Segoe UI", system-ui, sans-serif;
+    display: grid; grid-template-columns: 420px 1fr; height: 100vh;
+  }
+  #panel { padding: 20px; overflow-y: auto; border-right: 1px solid #26262f; }
+  h1 { font-size: 17px; margin: 0 0 4px; letter-spacing: -.01em; }
+  .sub { color: #8a8a99; font-size: 12px; margin-bottom: 18px; }
+  .test {
+    border: 1px solid #26262f; border-radius: 10px; padding: 14px;
+    margin-bottom: 12px; background: #14141a;
+  }
+  .test h2 { font-size: 13px; margin: 0 0 2px; display: flex; align-items: center; gap: 8px; }
+  .test p  { margin: 0 0 10px; color: #8a8a99; font-size: 12px; }
+  .dot { width: 9px; height: 9px; border-radius: 50%; background: #3a3a46; flex: none; }
+  .dot.run  { background: #d9a441; animation: pulse 1s infinite; }
+  .dot.pass { background: #3fb950; }
+  .dot.fail { background: #f85149; }
+  @keyframes pulse { 50% { opacity: .3; } }
+  button {
+    background: #2a2a35; color: #e8e8ee; border: 1px solid #3a3a46;
+    padding: 6px 13px; border-radius: 6px; cursor: pointer; font-size: 12px;
+    font-family: inherit;
+  }
+  button:hover:not(:disabled) { background: #34343f; }
+  button:disabled { opacity: .4; cursor: not-allowed; }
+  .opts { display: flex; gap: 6px; align-items: center; margin-bottom: 8px; flex-wrap: wrap; }
+  .opts input, .opts select {
+    background: #1c1c24; color: #e8e8ee; border: 1px solid #3a3a46;
+    border-radius: 5px; padding: 5px 8px; font: inherit; font-size: 12px;
+  }
+  .opts input { width: 170px; }
+  .opts label { font-size: 11px; color: #8a8a99; }
+  .metrics {
+    margin-top: 10px; font-family: "Cascadia Code", Consolas, monospace;
+    font-size: 11px; color: #9fd0a8; white-space: pre-wrap; word-break: break-word;
+    max-height: 220px; overflow-y: auto;
+  }
+  .metrics .err { color: #ff7b72; }
+  .metrics .warn { color: #d9a441; }
+  #stage { position: relative; background: #16161d; padding: 10px; }
+  #grid {
+    display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr;
+    gap: 10px; width: 100%; height: 100%;
+  }
+  .tile {
+    position: relative; background: #1c1c24; border-radius: 10px; overflow: hidden;
+    border: 2px solid transparent; transition: border-color .15s;
+  }
+  .tile.speaking { border-color: #3b82f6; }
+  .tile > .head { width: 100%; height: 100%; }
+  .tile .name {
+    position: absolute; left: 8px; bottom: 8px; z-index: 2;
+    background: rgba(0,0,0,.55); padding: 2px 8px; border-radius: 5px;
+    font-size: 11px; letter-spacing: .01em;
+  }
+  .tile .badge {
+    position: absolute; right: 8px; top: 8px; z-index: 2; font-size: 10px;
+    background: rgba(0,0,0,.55); padding: 2px 6px; border-radius: 5px; color: #8a8a99;
+  }
+  #verdict {
+    margin-top: 16px; padding: 12px; border-radius: 8px; font-size: 12px;
+    background: #14141a; border: 1px solid #26262f;
+  }
+  #verdict b { color: #fff; }
+</style>
+
+<div id="panel">
+  <h1>Phase 0 — Capability Spike</h1>
+  <div class="sub">Teen risky cheezein prove karni hain. Teeno pass = baaki sab ordinary app work hai.</div>
+
+  <div class="test" id="t0">
+    <h2><span class="dot"></span> 0 &middot; Network diagnostics</h2>
+    <p>Main process se check karta hai ki kaunse hosts reachable hain. Pehle ye chalao.</p>
+    <button data-run="0">Run test</button>
+    <div class="metrics"></div>
+  </div>
+
+  <div class="test" id="t1">
+    <h2><span class="dot"></span> 1 &middot; 3D Avatar render</h2>
+    <p>Chaar alag-alag avatars ek saath load hokar Iris Xe pe render hon — asli 4-member panel jaisa.</p>
+    <button data-run="1">Run test</button>
+    <div class="metrics"></div>
+  </div>
+
+  <div class="test" id="t2">
+    <h2><span class="dot"></span> 2 &middot; Neural TTS + lip-sync</h2>
+    <p>HeadTTS (Kokoro-82M) bole, RTF measure ho, aur avatar ke hoth exact visemes pe chalein.</p>
+    <button data-run="2" disabled>Run test</button>
+    <div class="metrics"></div>
+  </div>
+
+  <div class="test" id="t3">
+    <h2><span class="dot"></span> 3 &middot; Whisper STT (offline)</h2>
+    <p>Mic se 6 sec English bolo — Electron me webkitSpeechRecognition nahi chalta, isliye Whisper.</p>
+    <div class="opts">
+      <label for="sttModel">Model</label>
+      <select id="sttModel">
+        <option value="base">base.en (fast)</option>
+        <option value="small">small.en (names pe behtar)</option>
+      </select>
+    </div>
+    <div class="opts">
+      <label for="sttName">Aapka naam</label>
+      <input id="sttName" value="Alok Madheshiya" spellcheck="false">
+    </div>
+    <button data-run="3">Run test</button>
+    <div class="metrics"></div>
+  </div>
+
+  <div id="verdict">Abhi tak koi test nahi chala.</div>
+</div>
+
+<div id="stage"><div id="grid"></div></div>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "/node_modules/three/build/three.module.js",
+    "three/addons/": "/node_modules/three/examples/jsm/",
+    "talkinghead": "/node_modules/@met4citizen/talkinghead/modules/talkinghead.mjs",
+    "headtts": "/node_modules/@met4citizen/headtts/modules/headtts.mjs",
+    "transformers": "/node_modules/@huggingface/transformers/dist/transformers.web.js"
+  }
+}
+</script>
+<script type="module" src="/spike/spike.js"></script>
